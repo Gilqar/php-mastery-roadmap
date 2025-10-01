@@ -4098,3 +4098,20 @@ El programa está dividido en bloques lógicos, cada uno enfocado en un área cl
 - Resumen de contenerización y orquestación
 
 </details>
+
+
+---
+
+## 🚀 Pasos Siguientes
+
+¡Felicidades por llegar hasta aquí! La teoría es solo el comienzo. El verdadero dominio se alcanza con la práctica.
+
+Te animamos a que no te limites a leer. **Construye algo.** Elige un proyecto que te apasione y aplica los conceptos de estos módulos para hacerlo realidad.
+
+- **Crea un framework MVC desde cero.**
+- **Desarrolla una API REST completa para una aplicación real.**
+- **Contribuye a un proyecto Open Source de PHP.**
+
+El viaje es largo, pero cada línea de código que escribas te acercará más a la maestría.
+
+**¡Mucho éxito en tu camino para dominar PHP!**
