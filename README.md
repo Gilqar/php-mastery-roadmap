@@ -1,2 +1,4100 @@
-# php-mastery-roadmap
-Learn PHP.
+# 📚 PHP 8.5 Mastery: The Complete Roadmap
+
+Este repositorio contiene un programa de estudios exhaustivo y progresivo diseñado para llevar a un desarrollador desde los fundamentos más básicos de PHP hasta un nivel de maestría, con un fuerte enfoque en Programación Orientada a Objetos (POO), seguridad, patrones de diseño y prácticas modernas de DevOps.
+
+Este no es un curso para terminar en una semana, sino una **hoja de ruta completa** para una carrera profesional en el desarrollo con PHP.
+
+---
+
+## 📖 Cómo Usar esta Guía
+
+Debido a su enorme extensión, se recomienda no abordar este temario de forma estrictamente lineal de principio a fin. Úsalo como:
+
+1.  **Una Hoja de Ruta:** Para guiar tu aprendizaje a largo plazo.
+2.  **Una Enciclopedia de Consulta:** Para profundizar en temas específicos cuando lo necesites.
+3.  **Una Base para Proyectos:** Elige un bloque, estúdialo y luego construye un proyecto que aplique esos conocimientos.
+
+---
+
+## 🗂️ Estructura del Programa
+
+El programa está dividido en bloques lógicos, cada uno enfocado en un área clave del desarrollo con PHP.
+
+<details>
+<summary><strong>📍 Ver la Estructura Completa de Módulos</strong></summary>
+
+* **Bloque A – Fundamentos de PHP (Módulos 1–50)**
+    * *Sintaxis, variables, operadores, estructuras de control, funciones, arrays.*
+* **Bloque B – Programación Estructurada (Módulos 51–100)**
+    * *Funciones avanzadas, manejo de errores, sesiones, cookies, organización de proyectos.*
+* **Bloque C – PHP Orientado a Objetos (POO) (Módulos 101–200)**
+    * *Clases, objetos, herencia, interfaces, traits, namespaces, PSR, patrones SOLID.*
+* **Bloque D – Bases de Datos y PHP (Módulos 201–250)**
+    * *MySQL/MariaDB, PostgreSQL, SQLite, PDO, ORM (Doctrine, Eloquent), seguridad SQL.*
+* **Bloque E – PHP Avanzado (Módulos 251–300)**
+    * *Streams, sockets, expresiones regulares, programación asíncrona, generadores, corutinas.*
+* **Bloque F – Web Avanzada (Módulos 301–350)**
+    * *Arquitectura MVC, APIs REST/GraphQL, autenticación, seguridad web, WebSockets.*
+* **Bloque G – Frameworks PHP (Módulos 351–400)**
+    * *Laravel, Symfony, otros frameworks, microservicios con PHP.*
+* **Bloque H – PHP 8.5 y Futuro (Módulos 401–450)**
+    * *Novedades de PHP 8.x, patrones modernos, testing avanzado, DevOps, Docker, CI/CD.*
+
+</details>
+
+---
+
+## curriculum ## Curriculum Detallado
+
+### Bloque A – Fundamentos de PHP
+
+<details>
+<summary><strong>🔹 Módulo 1 – Introducción a PHP y Entorno</strong></summary>
+
+- ¿Qué es PHP y para qué se usa?
+- Historia de PHP: de Rasmus Lerdorf a PHP 8.5
+- Características principales de PHP
+- Usos comunes en desarrollo web
+- Diferencias entre PHP y otros lenguajes de scripting
+- Instalación de PHP en Windows
+- Instalación de PHP en Linux
+- Instalación de PHP en macOS
+- Uso de gestores de paquetes: Homebrew, apt, yum
+- Instalación con XAMPP
+- Instalación con MAMP
+- Instalación con Laragon
+- Instalación de PHP standalone
+- Configuración de `php.ini`
+- Ubicación de `php.ini` en diferentes sistemas
+- Configuración de límites de memoria
+- Configuración de `max_execution_time`
+- Configuración de errores y logs
+- Comprobar versión de PHP instalada
+- Comando `php -v`
+- Comando `php -m`
+- Comando `php -i`
+- Diferencia entre PHP CLI y PHP en servidor
+- Servidor embebido de PHP (`php -S`)
+- Hola Mundo en PHP CLI
+- Hola Mundo en servidor embebido
+- Archivos `.php` y su ejecución en navegador
+- Estructura mínima de un script PHP
+- Etiquetas `<?php ?>`
+- Alternativas de etiquetas: `<? ?>`, `<% %>`
+- Buenas prácticas: siempre usar `<?php ?>`
+- Diferencia entre `echo` y `print`
+- Uso de `print_r`
+- Uso de `var_dump`
+- Uso de `var_export`
+- Comentarios en PHP: `//`
+- Comentarios en PHP: `#`
+- Comentarios en PHP: `/* */`
+- Documentación con PHPDoc
+- Errores comunes de novato (ejemplo: cierre de etiquetas)
+- Ejecución de scripts desde consola
+- Redirección de salida en CLI
+- Uso de `exit()`
+- Uso de `die()`
+- Configuración de zona horaria por defecto
+- Configuración de idioma
+- Codificación UTF-8 en PHP
+- Qué es un intérprete de scripting
+- Ciclo de vida de una petición en PHP
+- PHP vs Node.js en el lado servidor
+- Diferencias entre PHP y Python en web
+- Diferencias entre PHP y Ruby en web
+- Servidores web más usados con PHP
+- Apache y módulo `mod_php`
+- PHP-FPM (FastCGI Process Manager)
+- Nginx con PHP-FPM
+- Servidor embebido de desarrollo (repaso)
+- Configuración de virtual hosts
+- Carpeta `htdocs` en Apache
+- Carpeta `www` en Nginx
+- Definición de ruta absoluta vs relativa
+- Servidores de prueba online para PHP
+- Replit y entornos cloud
+- Introducción a Docker con PHP
+- `Dockerfile` básico para PHP
+- Imagen oficial `php` en Docker Hub
+- Volúmenes en Docker con PHP
+- Introducción a Composer
+- Instalación de Composer
+- Primer uso de `composer init`
+- Instalación de librerías con Composer
+- Autoload con Composer
+- Repositorio Packagist
+- Qué son dependencias en PHP
+- Actualización de librerías con Composer
+- Eliminación de librerías con Composer
+- Archivos `composer.json` y `composer.lock`
+- Versionado semántico en Composer
+- PSR-4 autoloading
+- PSR-12 estilo de código
+- Estándares PHP-FIG
+- Herramientas de linting para PHP
+- Instalación de PHP-CS-Fixer
+- Instalación de PHP_CodeSniffer
+- Uso de linters en VSCode
+- Extensiones recomendadas en VSCode para PHP
+- Depuración con Xdebug
+- Instalación de Xdebug
+- Configuración de Xdebug en `php.ini`
+- Debug en VSCode con PHP
+- Debug en PhpStorm
+- Logs de errores en archivos
+- Manejo de errores en entorno de desarrollo
+- `Display Errors` vs `Log Errors`
+- Diferencia entre entornos DEV y PROD
+- Concepto de servidor local vs producción
+- Subir un script PHP a un hosting compartido
+- Subir un script PHP a un VPS
+- Diferencia entre hosting compartido y VPS
+- Primer resumen de fundamentos
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 2 – Variables, Constantes y Tipos de Datos</strong></summary>
+
+- Qué es una variable en PHP
+- Reglas de nombres de variables
+- Diferencia entre mayúsculas y minúsculas
+- Buenas prácticas de nomenclatura de variables
+- Variables dinámicas
+- Variables locales
+- Variables globales
+- Variables estáticas
+- Variables de sesión
+- Variables de servidor
+- Variables de entorno
+- Variables de petición HTTP
+- Alcance (scope) de variables
+- `$GLOBALS` y uso correcto
+- Palabra clave `global`
+- Variables por referencia
+- Operador `&`
+- Variables variables (`$$`)
+- Asignación múltiple
+- Destructuración de arrays
+- Conversión implícita de tipos
+- Conversión explícita de tipos
+- Casting `(int)`
+- Casting `(float)`
+- Casting `(string)`
+- Casting `(bool)`
+- Casting `(array)`
+- Casting `(object)`
+- Uso de `settype()`
+- Diferencia entre casting y `settype()`
+- Tipos escalares: `int`
+- Tipos escalares: `float`
+- Tipos escalares: `string`
+- Tipos escalares: `bool`
+- Tipo especial: `null`
+- Tipos compuestos: `array`
+- Tipos compuestos: `object`
+- Tipos compuestos: `callable`
+- Tipos compuestos: `iterable`
+- Identificación de tipos con `gettype()`
+- Uso de `var_dump()`
+- Uso de `print_r()`
+- Uso de `var_export()`
+- Función `get_debug_type()`
+- Funciones de comprobación `is_int()`
+- `is_float()`
+- `is_string()`
+- `is_bool()`
+- `is_null()`
+- `is_array()`
+- `is_object()`
+- `is_callable()`
+- `is_iterable()`
+- Constantes en PHP
+- Declarar constante con `define()`
+- Declarar constante con `const`
+- Diferencias entre `define` y `const`
+- Constantes mágicas (`__LINE__`, `__FILE__`)
+- Constantes de clase
+- Alcance de constantes
+- Constantes globales en proyectos
+- Constantes de entorno (`getenv`)
+- Uso de `putenv()`
+- `$_ENV` vs `$_SERVER`
+- Variables con valores por defecto
+- Variables inicializadas en `null`
+- Declaraciones de tipo en funciones
+- Tipos de retorno en funciones
+- Declaración estricta con `declare(strict_types=1)`
+- Union Types (`int|float`)
+- Intersection Types
+- Nullables (`?int`)
+- Tipos dinámicos en PHP
+- Errores comunes de tipado
+- Buenas prácticas con tipado
+- Variables en formularios
+- Variables en cookies
+- Variables en sesiones
+- Variables en archivos subidos
+- Variables en JSON decodificado
+- Variables y seguridad
+- Inyección por variables globales
+- `register_globals` (histórico)
+- Debug seguro de variables
+- Variables superglobales (`$_GET`)
+- `$_POST`
+- `$_REQUEST`
+- `$_FILES`
+- `$_COOKIE`
+- `$_SESSION`
+- `$_ENV`
+- `$_SERVER`
+- Uso de `extract()`
+- Peligros de `extract()`
+- Variables predefinidas en CLI
+- Variables especiales en Docker
+- Variables en `.env`
+- Uso de librerías `dotenv`
+- Buenas prácticas en entornos productivos
+- Resumen completo de variables y tipos
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 3 – Operadores en PHP</strong></summary>
+
+- Operadores aritméticos: `+` (suma)
+- `-` (Resta)
+- `*` (Multiplicación)
+- `/` (División)
+- `%` (Módulo)
+- `**` (Exponenciación)
+- Orden de precedencia
+- Operadores de asignación `=`
+- Asignación compuesta `+=`
+- `-=`
+- `*=`
+- `/=`
+- `%=`
+- `**=`
+- Operadores de incremento `++`
+- Operadores de decremento `--`
+- Pre-incremento
+- Post-incremento
+- Pre-decremento
+- Post-decremento
+- Operadores de comparación `==`
+- `!=`
+- `===`
+- `!==`
+- `>`
+- `<`
+- `>=`
+- `<=`
+- Comparación de strings
+- Comparación de arrays
+- Operadores lógicos `&&`
+- `||`
+- `!`
+- `and`
+- `or`
+- `xor`
+- Precedencia de lógicos
+- Operador ternario `?:`
+- Anidación de ternarios
+- Operador null coalescing `??`
+- Null coalescing assignment `??=`
+- Concatenación de strings `.`
+- Asignación concatenada `.=`
+- Operador de control de errores `@`
+- Operador de ejecución (`` ` ``)
+- Ejemplo ejecución de comandos
+- Operador `instanceof`
+- Operador nave espacial `<=>`
+- Ejemplo con `sort`
+- Operadores bit a bit `&`
+- `|`
+- `^`
+- `~`
+- `<<`
+- `>>`
+- Asignaciones compuestas de bits
+- `&=`
+- `|=`
+- `^=`
+- `<<=`
+- `>>=`
+- Operadores sobre arrays `+`
+- Comparación de arrays `==`
+- Comparación estricta de arrays `===`
+- Ejemplo práctico con arrays
+- Operadores con expresiones regulares
+- Operadores sobre objetos
+- Precedencia completa de operadores
+- Errores comunes con precedencia
+- Uso combinado de operadores
+- Ejemplo: calculadora básica
+- Ejemplo: validación de rangos
+- Ejemplo: combinación de strings
+- Ejemplo: control de flujo con ternario
+- Ejemplo: valores por defecto con `??`
+- Ejemplo: instancia de clase
+- Ejemplo: comparación de versiones `<=>`
+- Operadores y performance
+- Operadores y legibilidad
+- Uso excesivo de operadores
+- Alternativas a operadores complejos
+- Debug de expresiones
+- Agrupación con paréntesis
+- Expresiones largas con operadores
+- Comparación estricta vs flexible
+- Trampas de `==` con strings numéricos
+- Comparación booleana
+- Operadores y tipado estricto
+- Operadores y funciones anónimas
+- Operadores y arrays grandes
+- Operadores en estructuras condicionales
+- Operadores en bucles
+- Operadores en validaciones de formularios
+- Operadores en bases de datos (ejemplo)
+- Operadores en filtros de datos
+- Operadores en APIs
+- Operadores en scripts CLI
+- Operadores en tests unitarios
+- Resumen de operadores
+- Ejercicios prácticos de operadores
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 4 – Estructuras de Control I (Condicionales)</strong></summary>
+
+- Introducción a estructuras de control
+- Concepto de flujo de ejecución en PHP
+- Uso básico de `if`
+- Sintaxis alternativa de `if` con `:` y `endif`
+- Estructura `if...else`
+- Uso de `elseif`
+- Diferencia entre `elseif` y `else if`
+- Anidación de `if` dentro de `if`
+- Anidación con niveles múltiples
+- Buenas prácticas en anidaciones
+- Control de flujo con operadores lógicos en `if`
+- Uso de paréntesis para legibilidad
+- Validación de valores positivos
+- Validación de valores negativos
+- Comparación de strings en `if`
+- Comparación estricta dentro de `if`
+- Uso de `if` con arrays vacíos
+- Validar existencia de claves en arrays
+- Uso de `if` con objetos
+- Uso de `if` con funciones de comprobación (`is_array`, `is_int`)
+- Validación de `null` en `if`
+- Diferencia entre `isset()` y `empty()`
+- Uso de `isset()` en condicionales
+- Uso de `empty()` en condicionales
+- Validación de valores `false`
+- Validación de cadenas vacías
+- Validación de longitud de cadena (`strlen`)
+- Validación de coincidencias con `strpos`
+- Uso de condicionales en formularios
+- Uso de condicionales con datos de `$_POST`
+- Condicionales con datos de `$_GET`
+- Uso de condicionales con cookies
+- Condicionales con sesiones
+- Condicionales en carga de archivos
+- Uso de condicionales con fechas (`date`)
+- Comparación de fechas (`strtotime`)
+- Uso de `if` para validación de permisos
+- Condicionales en sistemas de login
+- Validación de roles de usuario
+- Ejemplo: sistema de autenticación con `if`
+- Ejemplo: menú dinámico con `if`
+- Ejemplo: cambiar idioma con `if`
+- Uso de condicionales en APIs
+- Ejemplo de validación de JSON
+- Ejemplo: comprobación de cabeceras HTTP
+- Condicionales en CLI
+- Validación de argumentos de consola
+- Ejemplo: comprobación de flags en CLI
+- Condicionales en scripts automatizados
+- Ejemplo: ejecución según día de la semana
+- Introducción al operador ternario `?:`
+- Sintaxis corta del ternario
+- Ternarios anidados
+- Buenas prácticas con ternarios
+- Cuándo evitar ternarios
+- Ejemplo: asignar valores por defecto
+- Ejemplo: simplificar un `if...else`
+- Ejemplo: validación de formularios
+- Introducción al operador null coalescing `??`
+- Diferencia entre `??` y ternario
+- Uso de `??` con variables no definidas
+- Uso de `??` con valores `null`
+- Ejemplo: obtener valor de `$_GET` o valor por defecto
+- Ejemplo: asignación con `??=`
+- Ventajas de `??` sobre `isset()`
+- Ejemplo práctico de `??` en proyectos modernos
+- Introducción a `match` (PHP 8)
+- Sintaxis de `match`
+- Diferencias entre `match` y `switch`
+- Ejemplo: evaluar enteros con `match`
+- Ejemplo: evaluar strings con `match`
+- Ejemplo: devolver valores con `match`
+- Ejemplo: asignar valores a variables con `match`
+- Ejemplo: simplificación de múltiples `if...elseif`
+- Ejemplo: `match` con funciones anónimas
+- Ejemplo: `match` con arrays
+- Ejemplo: `match` con expresiones complejas
+- Uso de `match` en validación de estados
+- Uso de `match` en enrutamiento básico
+- Ventajas de `match` sobre `if`
+- Limitaciones actuales de `match`
+- Ejemplo: simplificar validación de roles con `match`
+- Ejemplo: construir API pequeña con `match`
+- Comparación de `if`, `switch` y `match`
+- Cuándo usar `if` en lugar de `match`
+- Cuándo usar `match` en lugar de `if`
+- Ejemplo: calculadora con `match`
+- Ejemplo: procesar opciones de menú con `match`
+- Ejemplo: respuesta JSON dinámica con `match`
+- Errores comunes en condicionales
+- Olvidar llaves `{}`
+- Confusión entre `=` y `==`
+- Confusión entre `==` y `===`
+- Mal uso de `isset()`
+- Uso incorrecto de `empty()`
+- Abuso de anidaciones
+- Falta de paréntesis en expresiones complejas
+- Mal uso de ternarios anidados
+- Olvidar `break` en `switch` vs no necesario en `match`
+- Resumen de estructuras condicionales
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 5 – Estructuras de Control II (Bucles)</strong></summary>
+
+- Introducción a bucles en PHP
+- ¿Qué es la iteración?
+- Uso básico de `while`
+- Sintaxis alternativa de `while` (`endwhile`)
+- Ejemplo: contador con `while`
+- Validación de condiciones en `while`
+- Uso de `do...while`
+- Diferencia entre `while` y `do...while`
+- Ejemplo: validación con `do...while`
+- Bucles infinitos con `while(true)`
+- Riesgos de bucles infinitos
+- Uso de `break` en `while`
+- Uso de `continue` en `while`
+- Ejemplo: imprimir números pares con `while`
+- Ejemplo: leer archivo línea por línea con `while`
+- Introducción al bucle `for`
+- Sintaxis de `for`
+- Ejemplo: contador ascendente con `for`
+- Ejemplo: contador descendente con `for`
+- Múltiples inicializaciones en `for`
+- Condiciones múltiples en `for`
+- Incrementos múltiples en `for`
+- Uso de `break` en `for`
+- Uso de `continue` en `for`
+- Ejemplo: tabla de multiplicar con `for`
+- Ejemplo: recorrer rango de caracteres
+- Introducción al bucle `foreach`
+- Recorrer arrays indexados con `foreach`
+- Recorrer arrays asociativos con `foreach`
+- Recorrer arrays multidimensionales
+- Uso de `foreach` con referencia (`&`)
+- Modificar valores dentro de `foreach`
+- Ejemplo: sumar elementos de array con `foreach`
+- Ejemplo: generar lista HTML con `foreach`
+- Ejemplo: recorrer JSON decodificado
+- Ejemplo: recorrer objeto `stdClass`
+- Ejemplo: recorrer colecciones de objetos
+- Diferencia entre `for` y `foreach`
+- Cuándo usar `for` y cuándo `foreach`
+- Introducción al `switch`
+- Sintaxis básica de `switch`
+- Uso de `case` en `switch`
+- Importancia de `break` en `switch`
+- Uso de `default` en `switch`
+- Ejemplo: menú con `switch`
+- Ejemplo: validación de días de la semana
+- Ejemplo: sistema de permisos con `switch`
+- Ejemplo: opciones de usuario en CLI
+- Anidación de `switch`
+- `switch` dentro de bucles
+- Ejemplo: múltiples condiciones con `switch`
+- `switch` y comparación estricta
+- Limitaciones de `switch`
+- Alternativa moderna: `match`
+- Uso combinado de `switch` y bucles
+- Control de flujo con `goto` (poco recomendado)
+- Sintaxis de `goto`
+- Ejemplo: saltar bloques de código con `goto`
+- Ejemplo: simulación de bucle con `goto`
+- Riesgos de `goto`
+- Uso de `exit()` en estructuras de control
+- Uso de `die()` en bucles
+- Ejemplo: parar ejecución al cumplir condición
+- Ejemplo: validar input y salir del script
+- Uso de `break` con niveles (`break 2`)
+- Uso de `continue` con niveles (`continue 2`)
+- Ejemplo: bucles anidados con `break 2`
+- Ejemplo: bucles anidados con `continue 2`
+- Uso de `foreach` anidado
+- Ejemplo: recorrer tabla 2D con `foreach`
+- Ejemplo: matriz con `for` anidados
+- Ejemplo: multiplicación de matrices
+- Ejemplo: generar HTML dinámico con bucles
+- Ejemplo: construir tabla de datos
+- Ejemplo: generar calendario simple
+- Ejemplo: cargar datos de base de datos en bucle
+- Ejemplo: procesar registros de archivo CSV
+- Ejemplo: API que devuelve lista de elementos
+- Uso de bucles con funciones generadoras
+- Uso de `yield` dentro de bucles
+- Ejemplo: generar secuencia infinita con `yield`
+- Uso de bucles con corutinas
+- Diferencia entre bucles tradicionales y generadores
+- Ejemplo: paginación con `foreach`
+- Ejemplo: procesar datos en lotes
+- Errores comunes en bucles
+- Condiciones que nunca cambian
+- Variables no inicializadas en `for`
+- Condiciones de parada incorrectas
+- Uso excesivo de bucles anidados
+- Falta de `break` en `switch`
+- Mal uso de `goto`
+- Optimizaciones en bucles
+- Evitar cálculos innecesarios dentro de bucles
+- Uso de funciones integradas en lugar de bucles manuales
+- Evitar recorrer arrays gigantes sin filtros
+- Medir performance de bucles
+- Alternativas a bucles (`array_map`, `array_filter`)
+- Bucles y legibilidad del código
+- Resumen de estructuras de control repetitivas
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 6 – Funciones I</strong></summary>
+
+- Introducción a funciones en PHP
+- ¿Qué es una función?
+- Ventajas de usar funciones
+- Definición de función con `function`
+- Sintaxis de funciones básicas
+- Convención de nombres para funciones
+- Funciones con parámetros
+- Parámetros opcionales
+- Parámetros con valores por defecto
+- Parámetros requeridos
+- Orden de parámetros en funciones
+- Uso de coma final en listas de parámetros (PHP 7.3+)
+- Paso de parámetros por valor
+- Paso de parámetros por referencia (`&`)
+- Ejemplo: incrementar valor con referencia
+- Funciones que devuelven valores (`return`)
+- Retorno de múltiples valores con arrays
+- Retorno de múltiples valores con listas
+- Uso de `list()` para desempaquetar retornos
+- Uso de `[]` para desempaquetar retornos
+- Funciones sin retorno (`void`)
+- Funciones con tipos de retorno (PHP 7+)
+- Retorno de tipos unión (PHP 8)
+- Retorno de tipos nullables (`?int`)
+- Declaración estricta de tipos de retorno
+- Alcance de variables dentro de funciones
+- Variables locales en funciones
+- Variables globales en funciones
+- Uso de `global` dentro de funciones
+- Uso de `$GLOBALS` en funciones
+- Variables estáticas en funciones
+- Ejemplo: contador con variable estática
+- Recursividad en funciones
+- Ejemplo: factorial recursivo
+- Ejemplo: Fibonacci recursivo
+- Ejemplo: árbol de directorios recursivo
+- Cuándo evitar recursividad
+- Comparación recursión vs bucles
+- Funciones puras
+- Ejemplo de función pura
+- Ventajas de funciones puras
+- Funciones con efectos secundarios
+- Ejemplo: escribir archivo desde función
+- Ejemplo: modificar variable global desde función
+- Importancia de evitar efectos secundarios
+- Funciones como bloques reutilizables
+- Ejemplo: formatear fecha
+- Ejemplo: sanitizar entrada de usuario
+- Ejemplo: validar correo electrónico
+- Ejemplo: calcular promedio
+- Funciones matemáticas en PHP
+- `abs()`, `round()`, `ceil()`, `floor()`
+- `min()`, `max()`
+- `sqrt()`, `pow()`
+- `rand()`, `mt_rand()`
+- `number_format()`
+- Funciones de strings en PHP
+- `strlen()`, `strpos()`, `substr()`
+- `str_replace()`, `strtolower()`, `strtoupper()`
+- `ucfirst()`, `ucwords()`
+- `trim()`, `ltrim()`, `rtrim()`
+- `explode()` y `implode()`
+- `str_split()`
+- Funciones de arrays en PHP
+- `count()`, `array_push()`, `array_pop()`
+- `array_shift()`, `array_unshift()`
+- `in_array()`, `array_key_exists()`
+- `array_keys()`, `array_values()`
+- `array_merge()`
+- `array_diff()`, `array_intersect()`
+- `array_slice()`
+- `array_splice()`
+- Funciones de manejo de tiempo
+- `time()`, `date()`
+- `strtotime()`
+- `date_default_timezone_set()`
+- `microtime()`
+- Funciones de depuración
+- `var_dump()`, `print_r()`
+- `debug_backtrace()`
+- `error_log()`
+- Funciones de sistema
+- `phpinfo()`
+- `getenv()`, `putenv()`
+- `ini_get()`, `ini_set()`
+- `exit()`, `die()`
+- Funciones de inclusión
+- `include`
+- `require`
+- `include_once`
+- `require_once`
+- Diferencia entre `include` y `require`
+- Errores comunes en funciones
+- Declarar funciones dentro de condicionales
+- Uso incorrecto de referencias
+- Falta de retorno en funciones
+- Uso excesivo de variables globales
+- Funciones demasiado largas
+- Buenas prácticas de diseño de funciones
+- Resumen general de funciones en PHP
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 7 – Funciones II (Avanzadas, Anónimas y Closures)</strong></summary>
+
+- Introducción a funciones avanzadas
+- Diferencia entre funciones definidas y anónimas
+- Declaración de funciones anónimas
+- Uso de funciones anónimas como variables
+- Asignación de funciones anónimas a variables
+- Paso de funciones anónimas como parámetros
+- Retorno de funciones anónimas desde funciones
+- Ventajas de funciones anónimas
+- Limitaciones de funciones anónimas
+- Introducción a closures
+- Declaración de closure en PHP
+- Uso de `use` en closures
+- Ejemplo: sumar valores con closure
+- Ejemplo: filtrar array con closure
+- Ejemplo: transformar array con closure
+- Ejemplo: contador con closure
+- Diferencia entre closure y función anónima
+- Closures como callbacks
+- Uso de `array_map()` con closures
+- Uso de `array_filter()` con closures
+- Uso de `array_reduce()` con closures
+- Closures en validaciones de formularios
+- Closures en APIs
+- Closures en funciones matemáticas
+- Ejemplo: calculadora con closures
+- Ejemplo: formateador de strings con closures
+- Closures como generadores de HTML
+- Ejemplo: generar menú dinámico con closures
+- Closures como factorías de objetos
+- Closures y ámbito de variables
+- Uso de `use (&$var)` en closures
+- Diferencias entre paso por valor y referencia en closures
+- Closures y funciones recursivas
+- Ejemplo: factorial con closure
+- Ejemplo: Fibonacci con closure
+- Closures y programación funcional
+- Principios de programación funcional en PHP
+- Composición de funciones con closures
+- Funciones de orden superior en PHP
+- Ejemplo: aplicar funciones dinámicamente
+- Uso de `callable` como tipo de parámetro
+- Validar si una variable es callable
+- Uso de `is_callable()`
+- Ejemplo: pasar función normal como callable
+- Ejemplo: pasar closure como callable
+- Diferencias entre `callable` y `Closure`
+- Métodos anónimos en clases (PHP 7.0+)
+- Métodos anónimos con `static function`
+- Introducción a arrow functions (PHP 7.4)
+- Sintaxis de arrow functions `fn()`
+- Ejemplo: suma con arrow function
+- Ejemplo: map con arrow function
+- Ejemplo: filter con arrow function
+- Ejemplo: reduce con arrow function
+- Diferencias entre arrow function y closure
+- Alcance implícito en arrow functions
+- Limitaciones de arrow functions
+- Cuándo preferir arrow functions sobre closures
+- Uso de arrow functions en arrays
+- Arrow functions y tipado
+- Arrow functions y rendimiento
+- Arrow functions y legibilidad
+- Ejemplo: validación rápida con arrow function
+- Ejemplo: formateo de datos con arrow function
+- Ejemplo: transformaciones en JSON
+- Ejemplo: paginación con arrow functions
+- Ejemplo: funciones dinámicas en APIs
+- Ejemplo: funciones reutilizables con arrow functions
+- Funciones internas que aceptan `callable`
+- `array_map`
+- `array_filter`
+- `array_reduce`
+- `usort`
+- `uasort`
+- `uksort`
+- Uso de `usort` con closures
+- Ejemplo: ordenar por campo específico
+- Ejemplo: ordenar arrays multidimensionales
+- Funciones dinámicas con `call_user_func`
+- Ejemplo: llamar función por nombre
+- Ejemplo: llamar método de objeto
+- Ejemplo: llamar closure con `call_user_func`
+- Uso de `call_user_func_array`
+- Diferencia entre `call_user_func` y `call_user_func_array`
+- Ejemplo: pasar argumentos dinámicos
+- Invocar métodos de objetos anónimos
+- Uso de `Closure::fromCallable` (PHP 7.1+)
+- Ejemplo: convertir método en closure
+- Uso de `Closure::bind`
+- Ejemplo: cambiar contexto de closure
+- Uso de `Closure::bindTo`
+- Diferencias entre `bind` y `bindTo`
+- Ejemplo: simular `this` en closures
+- Uso de `static` en funciones anónimas
+- Ejemplo: funciones estáticas anónimas
+- Funciones avanzadas en entornos asíncronos
+- Funciones dinámicas en frameworks PHP
+- Buenas prácticas con funciones anónimas y closures
+- Cuándo evitar funciones anónimas
+- Resumen completo de funciones avanzadas
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 8 – Arrays I (Fundamentos y Operaciones Básicas)</strong></summary>
+
+- Introducción a arrays en PHP
+- Qué es un array indexado
+- Creación de array indexado con `[]`
+- Creación de array indexado con `array()`
+- Acceso a elementos de array indexado
+- Modificación de elementos de array
+- Añadir elementos al final (`[] =`)
+- Añadir elementos con `array_push()`
+- Eliminar último elemento con `array_pop()`
+- Eliminar primer elemento con `array_shift()`
+- Añadir al inicio con `array_unshift()`
+- Diferencia entre `array_push` y `[] =`
+- Iterar array indexado con `for`
+- Iterar array indexado con `foreach`
+- Imprimir array con `print_r()`
+- Imprimir array con `var_dump()`
+- Uso de `count()` en arrays
+- Arrays asociativos en PHP
+- Creación de array asociativo
+- Acceso a claves de array asociativo
+- Modificación de valores en arrays asociativos
+- Añadir nuevos pares clave-valor
+- Eliminar elementos con `unset()`
+- Verificar existencia de clave con `array_key_exists()`
+- Verificar existencia de valor con `in_array()`
+- Diferencia entre `isset()` y `array_key_exists()`
+- Recorrer array asociativo con `foreach`
+- Obtener claves de array con `array_keys()`
+- Obtener valores de array con `array_values()`
+- Arrays multidimensionales
+- Creación de array multidimensional
+- Acceso a elementos en array multidimensional
+- Modificación de array multidimensional
+- Iterar array multidimensional con `foreach` anidado
+- Ejemplo: matriz 2x2 en PHP
+- Ejemplo: tabla de usuarios en array
+- Ejemplo: productos en carrito de compras
+- Uso de `count()` en multidimensionales
+- Conversión de JSON a array (`json_decode`)
+- Conversión de array a JSON (`json_encode`)
+- Diferencia entre objeto y array de JSON
+- Conversión de objetos a arrays
+- Conversión de arrays a objetos
+- Arrays vacíos en PHP
+- Validar array vacío con `empty()`
+- Diferencia entre `empty()` y `count()==0`
+- Creación de arrays con rango (`range`)
+- Ejemplo: números del 1 al 10
+- Ejemplo: letras de la A a la Z
+- Arrays con valores repetidos (`array_fill`)
+- Arrays con claves personalizadas (`array_fill_keys`)
+- Array con elementos únicos (`array_unique`)
+- Eliminar duplicados manualmente
+- Uso de `array_values()` para reindexar
+- Uso de `array_combine()`
+- Uso de `array_merge()`
+- Diferencia entre `+` y `array_merge()`
+- Diferencia de arrays (`array_diff`)
+- Intersección de arrays (`array_intersect`)
+- `array_diff_assoc` vs `array_diff`
+- `array_intersect_assoc` vs `array_intersect`
+- Rebanar arrays (`array_slice`)
+- Modificar arrays (`array_splice`)
+- Dividir arrays en chunks (`array_chunk`)
+- Dividir arrays en columnas (`array_column`)
+- Búsqueda en arrays con `array_search`
+- Búsqueda estricta con `in_array`
+- Obtener primera clave con `array_key_first`
+- Obtener última clave con `array_key_last`
+- Ordenar arrays con `sort`
+- Ordenar arrays con `rsort`
+- Ordenar arrays asociativos con `asort`
+- Ordenar arrays asociativos con `ksort`
+- Ordenar arrays inverso con `arsort`
+- Ordenar claves inverso con `krsort`
+- Ordenar con función propia (`usort`)
+- Ordenar con función propia (`uksort`)
+- Ordenar con función propia (`uasort`)
+- Uso de `natsort()`
+- Uso de `natcasesort()`
+- Mezclar arrays con `shuffle()`
+- Invertir arrays con `array_reverse()`
+- Rellenar arrays (`array_pad`)
+- Cambiar claves a mayúsculas (`array_change_key_case`)
+- Diferencia entre arrays numéricos y asociativos
+- Iterar array con `array_walk()`
+- Iterar array con `array_map()`
+- Iterar array con `array_reduce()`
+- Ejemplo: sumar valores con `array_reduce()`
+- Ejemplo: filtrar pares con `array_filter()`
+- Ejemplo: transformar valores con `array_map()`
+- Ejemplo: contar ocurrencias con `array_count_values()`
+- Ejemplo: agrupar datos con arrays
+- Ejemplo: construir JSON a partir de arrays
+- Ejemplo: exportar arrays a CSV
+- Ejemplo: arrays en sesiones (`$_SESSION`)
+- Ejemplo: arrays en peticiones HTTP
+- Errores comunes con arrays en PHP
+- Buenas prácticas con arrays
+- Resumen de fundamentos de arrays
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 9 – Arrays II (Funciones Avanzadas y Casos Complejos)</strong></summary>
+
+- Introducción a funciones avanzadas de arrays
+- Diferencia entre arrays básicos y avanzados
+- Uso de `array_map()`
+- Ejemplo: elevar al cuadrado cada número
+- Ejemplo: capitalizar cada string
+- Uso de `array_filter()`
+- Ejemplo: filtrar pares de un array
+- Ejemplo: filtrar valores mayores que X
+- Uso de `array_reduce()`
+- Ejemplo: sumar todos los valores de un array
+- Ejemplo: concatenar strings con `array_reduce()`
+- Uso de `array_walk()`
+- Modificación de valores in-place con `array_walk()`
+- Uso de `array_walk_recursive()`
+- Ejemplo: recorrer array multidimensional
+- Uso de `array_column()`
+- Ejemplo: obtener columna de nombres
+- Ejemplo: obtener columna de IDs
+- Uso de `array_chunk()`
+- Dividir array en bloques de tamaño fijo
+- Uso de `array_combine()`
+- Combinar claves y valores
+- Uso de `array_merge_recursive()`
+- Diferencia entre `array_merge` y `array_merge_recursive`
+- Uso de `array_replace()`
+- Uso de `array_replace_recursive()`
+- Diferencias clave entre `array_replace` y `array_merge`
+- Uso de `array_diff()`
+- Uso de `array_diff_assoc()`
+- Uso de `array_diff_key()`
+- Uso de `array_udiff()` con función propia
+- Uso de `array_udiff_assoc()`
+- Uso de `array_intersect()`
+- Uso de `array_intersect_assoc()`
+- Uso de `array_intersect_key()`
+- Uso de `array_uintersect()`
+- Ejemplo práctico de diferencias e intersecciones
+- Uso de `array_unique()`
+- Eliminación de duplicados
+- Limitaciones de `array_unique()`
+- Uso de `array_search()`
+- Uso de `in_array()` con tercer parámetro estricto
+- Uso de `array_key_exists()`
+- Uso de `key_exists()` (alias)
+- Uso de `array_keys()` con filtro
+- Uso de `array_values()`
+- Uso de `array_flip()`
+- Invertir claves y valores
+- Riesgos de claves duplicadas en `array_flip`
+- Uso de `array_change_key_case()`
+- Ejemplo: convertir claves a minúsculas
+- Ejemplo: convertir claves a mayúsculas
+- Uso de `array_pad()`
+- Rellenar array hacia la derecha
+- Rellenar array hacia la izquierda
+- Uso de `array_rand()`
+- Selección de clave aleatoria
+- Selección de múltiples claves
+- Uso de `shuffle()`
+- Mezclar valores de un array
+- Uso de `array_reverse()`
+- Reindexación automática en `array_reverse()`
+- Uso de `array_slice()`
+- Diferencias entre `array_slice` y `array_splice`
+- Uso de `array_splice()`
+- Ejemplo: insertar valores en medio del array
+- Ejemplo: reemplazar parte del array
+- Uso de `array_fill()`
+- Uso de `array_fill_keys()`
+- Ejemplo práctico con claves dinámicas
+- Uso de `array_count_values()`
+- Ejemplo: contar repeticiones en array
+- Uso de `range()` para crear arrays
+- Ejemplo: números del 1 al 100
+- Ejemplo: letras de A a Z
+- Uso de `compact()`
+- Ejemplo: convertir variables en array
+- Uso de `extract()`
+- Ejemplo: convertir array en variables
+- Riesgos de `extract()`
+- Uso de `list()` para destructurar arrays
+- Uso combinado con `foreach`
+- Uso de `array_sum()`
+- Uso de `array_product()`
+- Ejemplo: multiplicar todos los valores
+- Uso de `array_diff_uassoc()`
+- Uso de `array_diff_ukey()`
+- Uso de `array_intersect_uassoc()`
+- Uso de `array_intersect_ukey()`
+- Ejemplo práctico de comparaciones personalizadas
+- Uso de `uasort()`
+- Uso de `uksort()`
+- Uso de `usort()`
+- Diferencias entre sort con funciones personalizadas
+- Ejemplo: ordenar objetos por propiedad
+- Ejemplo: ordenar array de arrays
+- Performance de funciones de arrays avanzadas
+- Buenas prácticas en arrays grandes
+- Errores comunes con arrays complejos
+- Resumen de arrays avanzados
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 10 – Strings en PHP (Manejo y Operaciones)</strong></summary>
+
+- Introducción a strings en PHP
+- Comillas simples vs comillas dobles
+- Diferencias de interpolación en comillas simples
+- Interpolación de variables en comillas dobles
+- Escapado de caracteres en strings
+- Uso de `\n`, `\t`, `\\`
+- Strings con heredoc
+- Strings con nowdoc
+- Diferencias entre heredoc y nowdoc
+- Concatenación con el operador `.`
+- Concatenación con asignación `.=`
+- Uso de variables dentro de strings
+- Diferencia entre `{}` y sin llaves en interpolación
+- Acceso a caracteres de un string como array
+- Strings vacíos en PHP
+- Validación de string vacío con `empty()`
+- Función `strlen()`
+- Función `mb_strlen()` para UTF-8
+- Diferencia entre `strlen` y `mb_strlen`
+- Función `strpos()`
+- Función `strrpos()`
+- Función `stripos()` (case-insensitive)
+- Función `substr()`
+- Función `substr_replace()`
+- Función `substr_count()`
+- Función `str_replace()`
+- Función `str_ireplace()`
+- Función `strtr()`
+- Función `preg_replace()`
+- Expresiones regulares básicas con `preg_match()`
+- Uso de `preg_match_all()`
+- Diferencias entre `preg_match` y `strpos`
+- Función `strtolower()`
+- Función `strtoupper()`
+- Función `ucfirst()`
+- Función `lcfirst()`
+- Función `ucwords()`
+- Función `trim()`
+- Función `ltrim()`
+- Función `rtrim()`
+- Función `wordwrap()`
+- Función `explode()`
+- Función `implode()`
+- Función `str_split()`
+- Función `chunk_split()`
+- Función `str_pad()`
+- Función `str_repeat()`
+- Función `strrev()`
+- Función `str_shuffle()`
+- Función `number_format()` en strings numéricos
+- Conversión de strings a números (`int`)
+- Conversión de strings a float (`float`)
+- Validación de números con `is_numeric()`
+- Validación de strings vacíos
+- Validación de emails con `filter_var()`
+- Validación de URLs con `filter_var()`
+- Validación de IPs con `filter_var()`
+- Función `htmlspecialchars()`
+- Función `htmlentities()`
+- Función `html_entity_decode()`
+- Diferencia entre `htmlspecialchars` y `htmlentities`
+- Función `addslashes()`
+- Función `stripslashes()`
+- Función `quotemeta()`
+- Función `nl2br()`
+- Función `strip_tags()`
+- Seguridad en strings HTML
+- Codificación UTF-8 en strings
+- Conversión de encoding con `mb_convert_encoding()`
+- Detección de encoding con `mb_detect_encoding()`
+- Uso de `iconv()`
+- Funciones multibyte (`mb_*`)
+- Manipulación de caracteres multibyte
+- Comparación de strings con `strcmp()`
+- Comparación case-insensitive con `strcasecmp()`
+- Comparación natural con `strnatcmp()`
+- Comparación natural case-insensitive con `strnatcasecmp()`
+- Uso de `strncmp()`
+- Hash de strings con `md5()`
+- Hash con `sha1()`
+- Hash con `hash()`
+- Uso de algoritmos modernos (sha256, sha512)
+- Encriptar strings con `password_hash()`
+- Verificar strings encriptados con `password_verify()`
+- Uso de `crypt()`
+- Codificación base64 con `base64_encode()`
+- Decodificación base64 con `base64_decode()`
+- Serialización de strings con `serialize()`
+- Deserialización con `unserialize()`
+- Serialización segura con `json_encode()`
+- Deserialización con `json_decode()`
+- Ejemplo: convertir array a JSON string
+- Ejemplo: convertir JSON string a array
+- Ejemplo: manipular payload de API
+- Errores comunes en manejo de strings
+- Uso incorrecto de comillas
+- Olvidar encoding UTF-8
+- Inyección de código vía strings no sanitizados
+- Buenas prácticas en manejo de strings
+- Resumen de funciones y operaciones de strings
+
+</details>
+
+---
+
+### Bloque B – Programación Estructurada
+
+<details>
+<summary><strong>🔹 Módulo 13 – Manejo de Directorios y Sistema</strong></summary>
+
+- Introducción a directorios en PHP
+- Diferencia entre archivo y directorio
+- Crear directorios con `mkdir()`
+- Crear directorios anidados (`mkdir` con `recursive`)
+- Verificar si existe un directorio con `is_dir()`
+- Comprobar permisos de directorio con `is_writable()`
+- Comprobar permisos de lectura con `is_readable()`
+- Cambiar permisos con `chmod()`
+- Cambiar propietario con `chown()`
+- Cambiar grupo con `chgrp()`
+- Eliminar directorios con `rmdir()`
+- Diferencia entre `unlink()` y `rmdir()`
+- Listar contenido de directorio con `scandir()`
+- Filtrar resultados de `scandir()`
+- Listar archivos ocultos
+- Leer directorios con `opendir()`
+- Iterar directorios con `readdir()`
+- Cerrar directorio con `closedir()`
+- Validar apertura de directorio
+- Uso de `dir()` como clase
+- Uso de `DirectoryIterator`
+- Obtener nombre de archivo con `getFilename()`
+- Verificar si es archivo con `isFile()`
+- Verificar si es directorio con `isDir()`
+- Obtener permisos con `getPerms()`
+- Obtener fecha de creación con `getCTime()`
+- Obtener fecha de modificación con `getMTime()`
+- Iterar directorios recursivos con `RecursiveDirectoryIterator`
+- Uso de `RecursiveIteratorIterator`
+- Ejemplo: listar todos los archivos de una carpeta
+- Ejemplo: buscar archivos por extensión
+- Ejemplo: buscar archivos mayores a X MB
+- Crear rutas absolutas con `realpath()`
+- Normalizar rutas con `dirname()`
+- Obtener nombre de directorio padre
+- Obtener nombre base de archivo con `basename()`
+- Obtener extensión con `pathinfo()`
+- Verificar rutas relativas
+- Construir rutas seguras en PHP
+- Evitar path traversal (`../`)
+- Filtrar rutas peligrosas
+- Uso de `glob()`
+- Listar archivos con comodines (`*.txt`)
+- Listar múltiples patrones con `GLOB_BRACE`
+- Ignorar directorios en `glob()`
+- Ordenar resultados de `glob()`
+- Uso de `fnmatch()`
+- Validar coincidencias de nombres
+- Ejemplo: encontrar logs rotativos
+- Ejemplo: encontrar imágenes en galería
+- Creación de estructura de carpetas de proyecto
+- Estándares de carpetas en PHP
+- Carpeta `src` en proyectos modernos
+- Carpeta `vendor` en proyectos con Composer
+- Carpeta `public` para acceso web
+- Carpeta `config`
+- Carpeta `storage`
+- Organización de directorios en frameworks PHP
+- Ejemplo: estructura en Laravel
+- Ejemplo: estructura en Symfony
+- Uso de symlinks en PHP (`symlink()`)
+- Verificar symlinks con `is_link()`
+- Obtener destino con `readlink()`
+- Crear copias de directorios
+- Función personalizada para copiar recursivamente
+- Función personalizada para eliminar recursivamente
+- Manejo de directorios grandes
+- Estrategias para millones de archivos
+- Uso de bases de datos en lugar de FS plano
+- Medir tamaño de directorios
+- Obtener espacio libre con `disk_free_space()`
+- Obtener espacio total con `disk_total_space()`
+- Calcular espacio usado
+- Monitoreo de directorios en tiempo real (inotify)
+- Implementar watchers en PHP (extensiones)
+- Uso en CLI: listar directorios
+- Uso en web: explorador de archivos simple
+- Implementar árbol de directorios
+- Ejemplo: navegador de imágenes
+- Ejemplo: gestor de descargas
+- Ejemplo: lector de logs en navegador
+- Errores comunes en directorios
+- Permisos insuficientes
+- No validar rutas
+- Usar `../` de forma insegura
+- Mal uso de symlinks
+- Buenas prácticas en directorios
+- Usar rutas absolutas en producción
+- Evitar acceso directo a carpetas sensibles
+- Asegurar `uploads/`
+- Asegurar `config/`
+- Buen uso de `.htaccess`
+- Buen uso de permisos 644 / 755
+- Estrategias en hosting compartido
+- Estrategias en VPS y servidores dedicados
+- Backups de directorios importantes
+- Sincronización con rsync
+- Integración con sistemas de despliegue
+- Monitoreo en entornos cloud
+- Resumen de manejo de directorios
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 14 – Manejo de Sesiones y Cookies</strong></summary>
+
+- Introducción a sesiones en PHP
+- Diferencia entre sesión y cookie
+- Configuración de sesiones en `php.ini`
+- Iniciar sesión con `session_start()`
+- Verificar si sesión está activa
+- Almacenar datos en `$_SESSION`
+- Recuperar datos de sesión
+- Modificar datos de sesión
+- Eliminar variable de sesión con `unset()`
+- Destruir sesión con `session_destroy()`
+- Obtener ID de sesión con `session_id()`
+- Regenerar ID de sesión con `session_regenerate_id()`
+- Configuración de `session.gc_maxlifetime`
+- Configuración de `session.cookie_lifetime`
+- Configuración de `session.save_path`
+- Guardar sesiones en archivos
+- Guardar sesiones en base de datos
+- Guardar sesiones en Redis
+- Guardar sesiones en Memcached
+- Manejo de múltiples sesiones
+- Problemas comunes con sesiones
+- Sesión no iniciada correctamente
+- Confusión entre `session_destroy` y `unset`
+- Expiración inesperada de sesión
+- Buenas prácticas en sesiones
+- Regenerar ID al iniciar sesión
+- Cerrar sesión en logout
+- Validar existencia de variables de sesión
+- Almacenar solo IDs, nunca datos sensibles
+- Evitar robo de sesión (Session Hijacking)
+- Evitar fijación de sesión (Session Fixation)
+- Uso de HTTPS en sesiones
+- Cookies seguras (secure flag)
+- Cookies HttpOnly
+- Cookies SameSite
+- Crear cookie con `setcookie()`
+- Parámetros de `setcookie()`
+- Crear múltiples cookies
+- Leer cookies con `$_COOKIE`
+- Modificar cookies existentes
+- Eliminar cookies con expiración pasada
+- Cookies de sesión vs persistentes
+- Cookies en navegadores
+- Límites de cookies (tamaño y cantidad)
+- Riesgos de usar cookies para datos sensibles
+- Almacenamiento de tokens en cookies
+- Implementar “Recordar sesión”
+- Ejemplo: login persistente con cookies
+- Ejemplo: carrito de compras con cookies
+- Ejemplo: preferencias de usuario con cookies
+- Ejemplo: idioma seleccionado con cookies
+- Ejemplo: seguimiento básico con cookies
+- Ejemplo: cookies para dark mode
+- Librerías de gestión de sesiones
+- Librerías de cookies seguras
+- Manejo de sesiones en frameworks
+- Laravel: manejo de sesiones
+- Symfony: manejo de sesiones
+- CodeIgniter: manejo de sesiones
+- Cookies en APIs modernas
+- Cookies en `SameSite=None`
+- Cookies en entornos cross-domain
+- Cookies y CORS
+- Uso de JWT en lugar de sesiones
+- Comparación entre JWT y sesiones PHP
+- Sesiones sin estado (stateless)
+- Ejemplo: autenticar con JWT
+- Ejemplo: sesiones híbridas (JWT + PHP)
+- Ejemplo: Single Sign-On con cookies
+- Almacenamiento de tokens en cookies HttpOnly
+- Almacenamiento de tokens en localStorage (comparación)
+- Seguridad de sesiones en producción
+- Regenerar ID cada X minutos
+- Invalidar sesiones en logout
+- Invalidar sesiones inactivas
+- Bloqueo de IPs con sesiones
+- Asociación de sesión con agente de usuario
+- Protección contra XSS en cookies
+- Protección contra CSRF con cookies
+- Tokens anti-CSRF almacenados en cookies
+- Ejemplo: formulario seguro con token CSRF
+- Ejemplo: API segura con CSRF token
+- Ejemplo: evitar manipulación de cookies en cliente
+- Errores comunes en manejo de sesiones
+- No llamar `session_start()`
+- Usar cookies sin flags de seguridad
+- Almacenar passwords en cookies
+- Usar sesiones sin regenerar ID
+- Usar sesiones en HTTP sin HTTPS
+- Buenas prácticas en entornos compartidos
+- Buenas prácticas en entornos cloud
+- Balanceo de sesiones en servidores
+- Uso de session stickiness
+- Sesiones distribuidas en Redis
+- Sesiones distribuidas en Memcached
+- Replicación de sesiones
+- Escalabilidad en sesiones
+- Logs de acceso con sesiones
+- Auditoría de cookies en aplicaciones
+- Resumen de sesiones y cookies
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 15 – Manejo de Formularios en PHP</strong></summary>
+
+- Introducción a formularios en PHP
+- Crear formulario HTML simple
+- Método GET en formularios
+- Método POST en formularios
+- Diferencias entre GET y POST
+- Variables `$_GET`
+- Variables `$_POST`
+- Combinación `$_REQUEST`
+- Validación de datos recibidos
+- Validación de campos requeridos
+- Validación de longitud mínima
+- Validación de longitud máxima
+- Validación de tipo numérico
+- Validación de correos electrónicos
+- Validación de URLs
+- Validación de fechas
+- Validación de expresiones regulares
+- Uso de `filter_var()`
+- Uso de `filter_input()`
+- Ejemplo: validación de correo con `filter_var()`
+- Ejemplo: validación de URL con `filter_var()`
+- Sanitización de entradas
+- `htmlspecialchars()`
+- `htmlentities()`
+- `strip_tags()`
+- `trim()`
+- Uso combinado de sanitización
+- Protección contra XSS en formularios
+- Evitar inyección de JavaScript
+- Escapado de HTML en formularios
+- Manejo de contraseñas en formularios
+- Encriptación con `password_hash()`
+- Validación con `password_verify()`
+- Confirmación de contraseñas
+- Formularios de login
+- Formularios de registro
+- Formularios de contacto
+- Formularios con múltiples inputs
+- Formularios con radios y checkboxes
+- Formularios con selects
+- Formularios con archivos
+- Uso de `enctype="multipart/form-data"`
+- Manejo de `$_FILES`
+- Validar tamaño de archivo
+- Validar tipo MIME
+- Validar extensión
+- Subir archivo al servidor
+- Guardar archivo con `move_uploaded_file()`
+- Ejemplo: formulario de subida de imágenes
+- Ejemplo: formulario de subida de PDF
+- Formularios con múltiples archivos
+- Formularios con arrays de inputs
+- Formularios dinámicos con JavaScript
+- Procesamiento en el servidor con PHP
+- Validación en servidor vs cliente
+- Uso de tokens CSRF en formularios
+- Generar token en sesión
+- Validar token en POST
+- Ejemplo: formulario seguro con CSRF
+- Formularios con recaptcha
+- Integrar Google reCAPTCHA
+- Validar token de reCAPTCHA
+- Formularios con pasos múltiples
+- Guardar progreso en sesión
+- Formularios con AJAX
+- Enviar datos con `fetch` a PHP
+- Procesar JSON en PHP desde formulario
+- Respuesta en JSON desde servidor
+- Formularios SPA con PHP backend
+- Formularios y frameworks PHP
+- Formularios en Laravel
+- Formularios en Symfony
+- Formularios en CodeIgniter
+- Librerías de validación de formularios
+- Ejemplo: Respect Validation
+- Ejemplo: Valitron
+- Formularios responsivos
+- Formularios accesibles (a11y)
+- Buenas prácticas en formularios
+- Errores comunes en formularios
+- No validar datos de entrada
+- Confiar solo en validación cliente
+- No sanitizar cadenas
+- No usar HTTPS en formularios
+- Guardar contraseñas en texto plano
+- Subir archivos sin validación
+- Enviar formularios sin tokens CSRF
+- No manejar timeouts de sesión
+- No mostrar errores específicos al usuario
+- Mostrar mensajes de error claros
+- Mantener datos ingresados tras error
+- Usar placeholders vs labels
+- Diferencia entre UX de GET y POST
+- Formularios en APIs REST
+- Formularios en GraphQL
+- Formularios en aplicaciones móviles con PHP backend
+- Logs de formularios enviados
+- Auditoría de formularios sensibles
+- Formularios y privacidad (GDPR)
+- Resumen de manejo de formularios
+
+</details>
+
+---
+### Bloque D – Bases de Datos y PHP
+
+<details>
+<summary><strong>🔹 Módulo 16 – Manejo de Bases de Datos con MySQLi</strong></summary>
+
+- Introducción a bases de datos en PHP
+- Diferencia entre MySQL y MariaDB
+- Extensión MySQLi en PHP
+- Conexión básica con `mysqli_connect()`
+- Manejo de errores en conexión
+- Uso de `mysqli_connect_errno()`
+- Uso de `mysqli_connect_error()`
+- Conexión con orientación a objetos (`new mysqli`)
+- Conexión persistente a MySQL
+- Configuración de charset en conexión
+- Ejecutar consultas con `mysqli_query()`
+- Consultas `SELECT` básicas
+- Consultas `INSERT` básicas
+- Consultas `UPDATE` básicas
+- Consultas `DELETE` básicas
+- Uso de `mysqli_error()`
+- Uso de `mysqli_errno()`
+- Escapar valores con `mysqli_real_escape_string()`
+- Prevención de SQL Injection básica
+- Uso de parámetros preparados con `mysqli_prepare()`
+- Sintaxis de `?` en consultas preparadas
+- Asignación de parámetros con `mysqli_stmt_bind_param()`
+- Ejecución con `mysqli_stmt_execute()`
+- Recuperar resultados con `mysqli_stmt_get_result()`
+- Uso de `mysqli_stmt_fetch()`
+- Ejemplo: login seguro con consultas preparadas
+- Ejemplo: búsqueda segura en base de datos
+- Uso de `mysqli_fetch_assoc()`
+- Uso de `mysqli_fetch_array()`
+- Uso de `mysqli_fetch_row()`
+- Diferencias entre métodos de fetch
+- Iterar resultados con `while`
+- Obtener número de filas con `mysqli_num_rows()`
+- Obtener número de columnas con `mysqli_field_count()`
+- Liberar resultados con `mysqli_free_result()`
+- Uso de transacciones en MySQLi
+- Iniciar transacción con `mysqli_begin_transaction()`
+- Confirmar cambios con `mysqli_commit()`
+- Revertir cambios con `mysqli_rollback()`
+- Ejemplo: transferencias bancarias seguras
+- Uso de autocommit
+- Desactivar autocommit temporalmente
+- Obtener último ID insertado con `mysqli_insert_id()`
+- Consultar metadatos de columnas con `mysqli_fetch_fields()`
+- Consultar tipos de columnas
+- Consultar nombre de columnas
+- Uso de múltiples consultas con `mysqli_multi_query()`
+- Iterar resultados múltiples
+- Riesgos de `mysqli_multi_query()`
+- Uso de procedimientos almacenados en MySQLi
+- Llamar procedimiento con `CALL`
+- Recuperar múltiples resultados de procedimiento
+- Uso de funciones definidas por el usuario (UDF)
+- Configurar MySQL para trabajar con PHP
+- Conexiones remotas a MySQL
+- Configuración de `bind-address`
+- Configuración de usuarios con permisos mínimos
+- Crear usuarios con `CREATE USER`
+- Asignar permisos con `GRANT`
+- Revocar permisos con `REVOKE`
+- Buenas prácticas de seguridad en MySQLi
+- No usar `root` para aplicaciones
+- Evitar credenciales en código
+- Uso de variables de entorno para credenciales
+- Manejo de contraseñas con `.env`
+- Ejemplo: conexión con variables de entorno
+- Manejo de conexiones en aplicaciones grandes
+- Pool de conexiones
+- Uso de patrones Singleton para conexión
+- Uso de patrones Factory para conexión
+- Optimización de consultas `SELECT`
+- Uso de índices en MySQL
+- Uso de `EXPLAIN` para analizar consultas
+- Evitar `SELECT *` en producción
+- Uso de `LIMIT` en consultas
+- Paginación con MySQLi
+- Ejemplo: mostrar lista de usuarios paginada
+- Manejo de errores con excepciones (`mysqli_report`)
+- Configuración de reportes de errores
+- Uso de `try/catch` con MySQLi
+- Migraciones de esquema básicas con PHP
+- Ejecutar scripts SQL desde PHP
+- Automatizar backups de MySQL con PHP
+- Restaurar backups desde PHP
+- Manejo de base de datos en hosting compartido
+- Configuración en cPanel
+- Configuración en VPS
+- Configuración en servidores cloud
+- Logs de errores de MySQL
+- Monitoreo de consultas lentas
+- Uso de `mysqli_options()`
+- Cambiar timeout de conexión
+- Establecer cliente charset
+- Configurar SSL en MySQLi
+- Verificar conexión SSL
+- Errores comunes en MySQLi
+- Fallo de conexión por credenciales
+- Uso incorrecto de consultas concatenadas
+- Ignorar `free_result` en grandes datasets
+- Resumen de uso de MySQLi
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 17 – Manejo de Bases de Datos con PDO</strong></summary>
+
+- Introducción a PDO
+- Diferencias entre PDO y MySQLi
+- Ventajas de PDO (multi-driver)
+- Instalación y habilitación de PDO
+- Conexión básica con `new PDO()`
+- Conexión con DSN (Data Source Name)
+- DSN para MySQL
+- DSN para PostgreSQL
+- DSN para SQLite
+- DSN para SQL Server
+- Manejo de errores con `try...catch`
+- Configuración de `PDO::ATTR_ERRMODE`
+- Modo silencioso (`ERRMODE_SILENT`)
+- Modo warning (`ERRMODE_WARNING`)
+- Modo excepción (`ERRMODE_EXCEPTION`)
+- Ejemplo de conexión con excepción
+- Ejecutar consultas con `query()`
+- Recuperar resultados con `fetch()`
+- Uso de `fetchAll()`
+- Diferencias entre `fetch` y `fetchAll`
+- Modos de fetch: `FETCH_ASSOC`
+- `FETCH_NUM`
+- `FETCH_BOTH`
+- `FETCH_OBJ`
+- `FETCH_CLASS`
+- Ejemplo: mapear resultados a objetos
+- Preparar consultas con `prepare()`
+- Ejecutar consultas con `execute()`
+- Uso de parámetros posicionales `?`
+- Uso de parámetros nombrados `:param`
+- `bindParam()`
+- `bindValue()`
+- Diferencias entre `bindParam` y `bindValue`
+- Tipos de datos en parámetros (`PDO::PARAM_INT`)
+- Uso de `rowCount()`
+- Recuperar último ID con `lastInsertId()`
+- Transacciones con `beginTransaction()`
+- Confirmar transacciones con `commit()`
+- Revertir con `rollBack()`
+- Ejemplo: operaciones bancarias seguras
+- Configurar autocommit
+- Consultar metadatos con `getColumnMeta()`
+- Listar columnas de tabla
+- Listar tablas en base de datos
+- Uso de `PDOStatement`
+- Iterar resultados con `foreach`
+- Ejemplo: recorrer resultados grandes con `fetch()`
+- Evitar consumo excesivo de memoria
+- Uso de `exec()` para `INSERT/UPDATE/DELETE`
+- Diferencia entre `exec` y `query`
+- Manejo de errores con `errorInfo()`
+- Uso de `errorCode()`
+- Ejemplo: detectar errores de duplicados
+- Ejemplo: detectar errores de integridad
+- Uso de `ATTR_DEFAULT_FETCH_MODE`
+- Configurar por defecto `FETCH_ASSOC`
+- Configuración de `ATTR_EMULATE_PREPARES`
+- Diferencia entre consultas preparadas reales y emuladas
+- Configuración de `ATTR_AUTOCOMMIT`
+- Configuración de `ATTR_CASE`
+- Configuración de `ATTR_ORACLE_NULLS`
+- Configuración de `ATTR_STRINGIFY_FETCHES`
+- Configuración de `ATTR_TIMEOUT`
+- Configuración de `ATTR_PERSISTENT`
+- Ejemplo: conexión persistente con PDO
+- Uso de drivers múltiples
+- Uso de SQLite con PDO
+- Uso de PostgreSQL con PDO
+- Uso de SQL Server con PDO
+- Migración de MySQLi a PDO
+- Uso de consultas parametrizadas seguras
+- Prevención de SQL Injection con PDO
+- Buenas prácticas en PDO
+- Uso de objetos de transferencia (DTO)
+- Mapear resultados a modelos
+- Uso de repositorios con PDO
+- Ejemplo: capa DAO en PDO
+- Uso en frameworks modernos
+- PDO en Laravel (Eloquent)
+- PDO en Symfony (Doctrine)
+- PDO en CodeIgniter
+- Logging de consultas en PDO
+- Uso de middlewares de logging
+- Uso de PDO en entornos productivos
+- Configuración en servidores compartidos
+- Configuración en VPS
+- Configuración en cloud
+- Monitoreo de queries lentas
+- Optimización de consultas con índices
+- Uso de prepared statements en bucles
+- Ejemplo: insertar miles de registros
+- Ejemplo: procesar datos de logs masivos
+- Ejemplo: migraciones entre bases de datos
+- Ejemplo: replicación de datos
+- Errores comunes con PDO
+- Usar `query` en lugar de `prepare`
+- Olvidar `execute()`
+- Mal uso de `bindParam`
+- Ignorar errores con `try...catch`
+- Resumen de PDO
+
+</details>
+
+---
+### Bloque E – PHP Avanzado
+
+<details>
+<summary><strong>🔹 Módulo 18 – Expresiones Regulares en PHP</strong></summary>
+
+- Introducción a expresiones regulares
+- Diferencia entre strings y patrones
+- Sintaxis básica de regex
+- Literales en regex
+- Clases de caracteres `[...]`
+- Rango de caracteres `[a-z]`
+- Negación `[^]`
+- Cuantificadores `*`
+- Cuantificadores `+`
+- Cuantificadores `?`
+- Cuantificadores `{n}`
+- Cuantificadores `{n,}`
+- Cuantificadores `{n,m}`
+- Agrupaciones con `()`
+- Alternativas con `|`
+- Anclas `^`
+- Ancla `$`
+- Ancla `\b`
+- Ancla `\B`
+- Secuencias `\d, \w, \s`
+- Secuencias `\D, \W, \S`
+- Escapar caracteres especiales `\`
+- Regex en PHP con `preg_match()`
+- Uso de `preg_match_all()`
+- Diferencia entre `preg_match` y `preg_match_all`
+- Uso de `preg_replace()`
+- Reemplazo con patrones dinámicos
+- Uso de `preg_split()`
+- Dividir strings con regex
+- Uso de `preg_grep()`
+- Filtrar arrays con regex
+- Ejemplo: validar correos electrónicos
+- Ejemplo: validar números de teléfono
+- Ejemplo: validar URLs
+- Ejemplo: validar direcciones IP
+- Ejemplo: validar fechas
+- Ejemplo: validar contraseñas
+- Ejemplo: validar tarjetas de crédito
+- Ejemplo: limpiar texto HTML
+- Ejemplo: extraer hashtags
+- Ejemplo: extraer menciones
+- Uso de `(?i)` para case-insensitive
+- Uso de `(?m)` para multiline
+- Uso de `(?s)` para dotall
+- Uso de `(?x)` para verbose
+- Ejemplo con múltiples flags
+- Uso de lookahead positivo `(?=...)`
+- Uso de lookahead negativo `(?!...)`
+- Uso de lookbehind positivo `(?<=...)`
+- Uso de lookbehind negativo `(?<!...)`
+- Ejemplo práctico de lookahead
+- Ejemplo práctico de lookbehind
+- Uso de subgrupos en regex
+- Captura de grupos
+- Referencias de grupo `\1`, `\2`
+- Uso de grupos no capturantes `(?:...)`
+- Ejemplo: validar fecha con grupos
+- Ejemplo: extraer nombres y apellidos
+- Ejemplo: dividir oración en frases
+- Ejemplo: validar nombres de usuario
+- Ejemplo: detectar números flotantes
+- Ejemplo: detectar mayúsculas
+- Ejemplo: detectar minúsculas
+- Ejemplo: detectar caracteres especiales
+- Ejemplo: validar códigos postales
+- Ejemplo: detectar repeticiones de caracteres
+- Ejemplo: validar JSON básico
+- Uso de `preg_replace_callback()`
+- Ejemplo: transformar datos con callback
+- Uso de `preg_last_error()`
+- Errores comunes en regex
+- “Backtracking limit exceeded”
+- “Recursion limit exceeded”
+- Diferencias entre PCRE y POSIX
+- Rendimiento en regex
+- Evitar regex demasiado genéricas
+- Evitar regex innecesarias
+- Regex vs funciones nativas
+- Regex vs validaciones manuales
+- Regex y seguridad
+- Riesgos de ReDoS (Regex Denial of Service)
+- Regex seguras en PHP
+- Regex en validaciones web
+- Regex en análisis de logs
+- Regex en parsing de datos
+- Regex en web scraping
+- Regex en APIs
+- Regex en sanitización de input
+- Regex en CLI
+- Regex en expresiones condicionales
+- Regex en motores de plantillas
+- Regex en frameworks PHP
+- Regex en validaciones de Laravel
+- Regex en validaciones de Symfony
+- Regex en CodeIgniter
+- Buenas prácticas en regex
+- Reutilizar patrones con constantes
+- Documentar regex complejas
+- Probar regex antes de producción
+- Resumen de regex en PHP
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 19 – Manejo de JSON</strong></summary>
+
+- Introducción a JSON
+- Diferencia entre JSON y XML
+- Uso de `json_encode()`
+- Uso de `json_decode()`
+- Diferencia entre `true` y `false` en `json_decode`
+- Convertir arrays a JSON
+- Convertir objetos a JSON
+- Convertir JSON a array
+- Convertir JSON a objeto
+- Uso de `JSON_PRETTY_PRINT`
+- Uso de `JSON_UNESCAPED_UNICODE`
+- Uso de `JSON_UNESCAPED_SLASHES`
+- Uso de `JSON_NUMERIC_CHECK`
+- Uso de `JSON_THROW_ON_ERROR` (PHP 7.3+)
+- Manejo de errores con `json_last_error()`
+- Uso de `json_last_error_msg()`
+- Errores comunes de JSON
+- Ejemplo: JSON malformado
+- Ejemplo: JSON con comas de más
+- Ejemplo: JSON con claves duplicadas
+- Serialización de objetos a JSON
+- Implementar `JsonSerializable`
+- Método `jsonSerialize()`
+- Ejemplo: serializar objeto usuario
+- Ejemplo: serializar carrito de compras
+- Ejemplo: serializar API response
+- Validar JSON con `json_decode`
+- Validar JSON con `json_validate()` (PHP 8.3+)
+- Comparación de JSON con `json_encode` y `strcmp`
+- Normalización de JSON
+- Guardar JSON en archivos
+- Leer JSON desde archivo
+- Validar tamaño de JSON
+- Manejo de JSON masivo
+- Parsear grandes JSON con streams
+- Uso de librerías de JSON streaming
+- JSON y APIs REST
+- Respuesta JSON desde PHP
+- Encabezado `Content-Type: application/json`
+- Ejemplo: API básica en PHP
+- Ejemplo: consumir API externa con JSON
+- Uso de `file_get_contents` en APIs
+- Uso de `curl` para APIs JSON
+- Validar respuesta JSON
+- Decodificar JSON anidado
+- Acceder a claves anidadas
+- Iterar sobre arrays JSON
+- Iterar sobre objetos JSON
+- Uso de `array_map` en JSON decodificado
+- Ejemplo: lista de usuarios desde JSON
+- Ejemplo: posts de API externa
+- Ejemplo: productos de tienda online
+- Manejo de JSON en sesiones
+- Guardar JSON en `$_SESSION`
+- Recuperar JSON de `$_SESSION`
+- Manejo de JSON en cookies
+- Guardar JSON en cookie
+- Recuperar JSON de cookie
+- Riesgos de JSON en cookies
+- JSON en base de datos
+- Guardar JSON como string en MySQL
+- Guardar JSON en columna JSON (MySQL 5.7+)
+- Consultar JSON con `JSON_EXTRACT`
+- Actualizar JSON en MySQL
+- Indexar JSON en MySQL
+- Uso de JSON en PostgreSQL
+- Tipos `json` y `jsonb`
+- Consultas JSON en PostgreSQL
+- Actualización de campos JSONB
+- Indexación de JSONB
+- JSON en MongoDB
+- Diferencia entre JSON y BSON
+- Conversión entre JSON y BSON
+- Uso de JSON en NoSQL
+- Integración de JSON con Redis
+- Almacenar JSON en Redis
+- Recuperar JSON de Redis
+- JSON en APIs GraphQL
+- JSON en WebSockets
+- JSON en colas de mensajería
+- Ejemplo: RabbitMQ con JSON
+- Ejemplo: Kafka con JSON
+- Seguridad en JSON
+- Riesgos de inyección JSON
+- Validar siempre datos decodificados
+- Evitar `eval()` en JSON
+- Manejo de BOM en JSON
+- Diferencia entre UTF-8 y UTF-16 en JSON
+- Validar encoding antes de parsear JSON
+- Ejemplo: parsear JSON de API externa insegura
+- Ejemplo: transformar JSON para frontend
+- Ejemplo: normalizar respuesta externa
+- Ejemplo: fusionar múltiples JSON
+- Ejemplo: dividir JSON en múltiples archivos
+- Errores comunes en JSON
+- Uso incorrecto de `json_decode`
+- No validar errores con `json_last_error()`
+- Guardar JSON mal formado en base de datos
+- No usar `JSON_THROW_ON_ERROR`
+- Resumen de manejo de JSON
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 20 – Manejo de XML</strong></summary>
+
+- Introducción a XML
+- Diferencias entre XML y JSON
+- Estructura básica de XML
+- Nodos y atributos en XML
+- Leer XML con `simplexml_load_string()`
+- Leer XML con `simplexml_load_file()`
+- Iterar nodos de XML con `foreach`
+- Acceder a atributos de XML
+- Convertir XML a string con `asXML()`
+- Crear XML con `SimpleXMLElement`
+- Añadir nodos a XML
+- Añadir atributos a XML
+- Guardar XML en archivo
+- Validar existencia de archivo XML
+- Cargar XML desde API externa
+- Convertir XML a JSON
+- Convertir JSON a XML
+- Manejo de errores al cargar XML
+- Uso de `libxml_use_internal_errors()`
+- Obtener errores con `libxml_get_errors()`
+- Eliminar errores con `libxml_clear_errors()`
+- Validación con esquema XSD
+- Validación con DTD
+- Diferencia entre DTD y XSD
+- Parseo de XML con `DOMDocument`
+- Crear objeto `DOMDocument`
+- Cargar archivo XML en `DOMDocument`
+- Acceder a elementos con `getElementsByTagName()`
+- Modificar nodos de XML
+- Eliminar nodos de XML
+- Añadir nodos con `createElement()`
+- Añadir atributos con `setAttribute()`
+- Guardar cambios con `save()`
+- Formatear XML con `formatOutput`
+- Importar nodos entre documentos XML
+- Uso de XPath en PHP
+- Crear objeto `DOMXPath`
+- Consultas básicas con XPath
+- Consultas avanzadas con XPath
+- Uso de namespaces en XML
+- Registrar namespaces en XPath
+- Consultar nodos con namespace
+- Ejemplo: RSS feed en PHP
+- Ejemplo: leer feed de noticias
+- Ejemplo: generar feed RSS dinámico
+- Ejemplo: generar sitemap XML
+- Ejemplo: parsear configuración XML
+- Ejemplo: exportar datos a XML
+- Ejemplo: importar datos desde XML
+- Integración XML con SOAP
+- Crear cliente SOAP en PHP
+- Crear servidor SOAP en PHP
+- Diferencias entre SOAP y REST
+- Uso de XML en APIs SOAP
+- Ejemplo: consumir API SOAP
+- Ejemplo: exponer API SOAP
+- Seguridad en XML
+- Riesgos de XXE (XML External Entity)
+- Desactivar entidades externas
+- Validar siempre entrada XML
+- Evitar XML no confiable
+- Configuración segura de `libxml`
+- Uso de `LIBXML_NOENT` con cuidado
+- Uso de `LIBXML_DTDLOAD` con cuidado
+- Ejemplo: ataque XXE en PHP
+- Ejemplo: prevención de XXE
+- Performance en XML
+- Procesar grandes XML con `XMLReader`
+- Diferencia entre `DOMDocument` y `XMLReader`
+- Ejemplo: parsear 1GB de XML
+- Uso de SAX parser en PHP
+- Eventos en SAX parser
+- Parseo progresivo de XML
+- Ejemplo: leer logs XML enormes
+- Comparación XML vs JSON en performance
+- Comparación XML vs JSON en legibilidad
+- Comparación XML vs JSON en flexibilidad
+- Ejemplo: exportar usuarios a XML
+- Ejemplo: importar productos desde XML
+- Ejemplo: integrar ERP con XML
+- Ejemplo: conectar con facturación electrónica
+- Ejemplo: generar CFDI en México con XML
+- Ejemplo: validar CFDI con XSD
+- Librerías de terceros para XML en PHP
+- Uso de `symfony/serializer`
+- Uso de `spatie/array-to-xml`
+- Conversión rápida de arrays a XML
+- Conversión de objetos a XML
+- Integración de XML en frameworks
+- Laravel y XML
+- Symfony y XML
+- CodeIgniter y XML
+- Errores comunes en XML
+- No validar entrada
+- Usar XML externo sin sanitizar
+- No manejar errores de `libxml`
+- Guardar XML mal formado
+- Confundir JSON con XML
+- No usar namespaces correctamente
+- Resumen de manejo de XML
+
+</details>
+
+---
+### Bloque C – PHP Orientado a Objetos (POO)
+
+<details>
+<summary><strong>🔹 Módulo 21 – Programación Orientada a Objetos I (Fundamentos)</strong></summary>
+
+- Introducción a POO en PHP
+- Diferencias entre POO y programación estructurada
+- Beneficios de la POO
+- Sintaxis básica de clases en PHP
+- Declarar una clase simple
+- Declarar un objeto a partir de clase
+- Uso de la palabra clave `new`
+- Propiedades de clase
+- Métodos de clase
+- Diferencia entre métodos y funciones
+- Visibilidad: `public`
+- Visibilidad: `protected`
+- Visibilidad: `private`
+- Constructores con `__construct()`
+- Inicializar propiedades en constructor
+- Constructores con parámetros
+- Destructores con `__destruct()`
+- Importancia de destructores
+- Propiedades tipadas en PHP 7.4+
+- Métodos con retorno tipado
+- Uso de `self`
+- Uso de `this`
+- Diferencia entre `self` y `$this`
+- Métodos estáticos
+- Propiedades estáticas
+- Acceder a propiedades estáticas
+- Acceder a métodos estáticos
+- Constantes de clase
+- Acceder a constantes de clase
+- Comparación entre constantes y propiedades
+- Encapsulamiento en POO
+- Ejemplo: clase Usuario básica
+- Ejemplo: clase Producto básica
+- Ejemplo: clase Carrito básica
+- Ejemplo: clase Orden básica
+- Métodos getters
+- Métodos setters
+- Validaciones en setters
+- Ejemplo: getters y setters en clase Usuario
+- Ejemplo: getters y setters en clase Producto
+- Métodos mágicos en PHP
+- `__get()`
+- `__set()`
+- `__isset()`
+- `__unset()`
+- `__toString()`
+- `__invoke()`
+- `__clone()`
+- Clonar objetos con `clone`
+- Diferencia entre referencia y clonación
+- Métodos mágicos avanzados
+- `__call()`
+- `__callStatic()`
+- `__sleep()`
+- `__wakeup()`
+- `__serialize()`
+- `__unserialize()`
+- Interfaces en PHP
+- Declarar una interfaz
+- Implementar interfaz en clase
+- Métodos obligatorios de interfaz
+- Ejemplo: interfaz Loggable
+- Ejemplo: interfaz Persistable
+- Herencia en PHP
+- Uso de `extends`
+- Sobrescritura de métodos
+- Uso de `parent::`
+- Constructores en herencia
+- Llamar constructor padre
+- Diferencias entre herencia simple y múltiple
+- Limitación: PHP no soporta herencia múltiple
+- Uso de interfaces para simular herencia múltiple
+- Ejemplo: clase Admin heredando de Usuario
+- Ejemplo: clase Premium heredando de Usuario
+- Polimorfismo básico
+- Polimorfismo con interfaces
+- Polimorfismo con herencia
+- Ejemplo: método `calcularPrecio()` polimórfico
+- Ejemplo: método `autenticar()` polimórfico
+- Abstracción en PHP
+- Declarar clase abstracta
+- Métodos abstractos
+- Obligación de implementación
+- Ejemplo: clase abstracta Animal
+- Ejemplo: clase abstracta BaseModel
+- Comparación entre interfaces y clases abstractas
+- Diferencias clave entre `abstract` e `interface`
+- Casos de uso de interfaces
+- Casos de uso de clases abstractas
+- Namespaces en PHP
+- Declarar namespace
+- Uso de `use` para importar clases
+- Alias de clases con `as`
+- Namespaces y organización de proyectos
+- Autoloading de clases con `spl_autoload_register()`
+- Estándar PSR-4 para autoloading
+- Composer y autoloading automático
+- Buenas prácticas en POO
+- Errores comunes en POO
+- Resumen de fundamentos de POO
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 22 – Programación Orientada a Objetos II (Herencia y Polimorfismo Avanzado)</strong></summary>
+
+- Introducción a herencia avanzada
+- Ejemplo: clase Vehículo base
+- Clase Coche que hereda de Vehículo
+- Clase Moto que hereda de Vehículo
+- Uso de `final` en clases
+- Uso de `final` en métodos
+- Restricción de herencia con `final`
+- Ejemplo de clase final
+- Polimorfismo dinámico
+- Polimorfismo con métodos sobrescritos
+- Ejemplo: clase Pago con métodos distintos
+- Ejemplo: clase Notificación con métodos distintos
+- Late Static Bindings (`static::`)
+- Diferencia entre `self` y `static`
+- Ejemplo: patrón Factory con LSB
+- Ejemplo: herencia con LSB
+- Traits en PHP
+- Declarar un trait
+- Incluir trait en clase
+- Métodos en traits
+- Propiedades en traits
+- Uso de múltiples traits
+- Conflicto de métodos en traits
+- Resolución con `insteadof`
+- Resolución con `as`
+- Ejemplo: trait Loggable
+- Ejemplo: trait Serializable
+- Ejemplo: trait Timestamps
+- Uso combinado de traits e interfaces
+- Traits como reemplazo parcial de herencia múltiple
+- Buenas prácticas con traits
+- Evitar traits demasiado grandes
+- Evitar duplicación de código en traits
+- Interfaces avanzadas
+- Interfaces que heredan de otras interfaces
+- Ejemplo: interfaz `JsonSerializable`
+- Ejemplo: interfaz `Countable`
+- Ejemplo: interfaz `Iterator`
+- Ejemplo: interfaz `ArrayAccess`
+- Implementar `Countable` en clase
+- Implementar `Iterator` en clase
+- Implementar `ArrayAccess` en clase
+- Diferencia entre `ArrayAccess` e `Iterator`
+- Implementar `Serializable` en clase
+- Ejemplo: serialización personalizada
+- Clases abstractas avanzadas
+- Métodos abstractos con tipado
+- Métodos abstractos con retorno tipado
+- Ejemplo: clase abstracta Forma
+- Ejemplo: clase abstracta Controlador
+- Jerarquías complejas de herencia
+- Diagrama UML básico
+- Ejemplo: sistema de empleados
+- Ejemplo: sistema de facturación
+- Sobrecarga de métodos simulada
+- Sobrecarga de propiedades simulada
+- Uso de `__get` y `__set` en herencia
+- Uso de `__call` en herencia
+- Uso de `__toString` en herencia
+- Ejemplo: convertir objeto a string
+- Ejemplo: clase Carrito con `__toString`
+- Comparación de objetos en POO
+- Sobrescribir operadores (no nativo en PHP)
+- Simulación de operadores en PHP
+- Ejemplo: sumar objetos Dinero
+- Ejemplo: comparar objetos Persona
+- Composición vs herencia
+- Ventajas de composición
+- Desventajas de herencia excesiva
+- Ejemplo: clase Motor compuesta en Coche
+- Ejemplo: clase Dirección compuesta en Empresa
+- Inyección de dependencias básica
+- Constructor Injection
+- Setter Injection
+- Interface Injection
+- Ejemplo: clase Usuario con Logger inyectado
+- Ejemplo: clase Controlador con Repositorio inyectado
+- Uso de contenedores de dependencias
+- Patrón Service Locator
+- Patrón Dependency Injection Container (DIC)
+- Inversión de control (IoC)
+- Ejemplo: framework IoC básico
+- Principio SOLID – Single Responsibility
+- Principio SOLID – Open/Closed
+- Principio SOLID – Liskov Substitution
+- Principio SOLID – Interface Segregation
+- Principio SOLID – Dependency Inversion
+- Ejemplo: aplicar SRP en clases
+- Ejemplo: aplicar OCP en clases
+- Ejemplo: aplicar LSP en clases
+- Ejemplo: aplicar ISP en interfaces
+- Ejemplo: aplicar DIP en dependencias
+- Buenas prácticas en herencia
+- Buenas prácticas en polimorfismo
+- Buenas prácticas en traits
+- Evitar God Objects
+- Evitar jerarquías muy profundas
+- Uso de patrones de diseño con POO
+- Ejemplo: patrón Strategy
+- Resumen de herencia y polimorfismo
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 23 – Manejo de Excepciones y Errores</strong></summary>
+
+- Introducción a errores en PHP
+- Diferencia entre errores y excepciones
+- Tipos de errores en PHP
+- Notice
+- Warning
+- Fatal Error
+- Parse Error
+- Deprecated
+- Uso de `try...catch`
+- Sintaxis básica de `try...catch`
+- Uso de múltiples `catch`
+- Uso de `finally`
+- Captura de excepciones específicas
+- Clase base `Exception`
+- Propiedades de `Exception`: message
+- Propiedades de `Exception`: code
+- Propiedades de `Exception`: file
+- Propiedades de `Exception`: line
+- Métodos de `Exception`: `getMessage()`
+- `getCode()`
+- `getFile()`
+- `getLine()`
+- `getTrace()`
+- `getTraceAsString()`
+- Uso de `throw` para lanzar excepciones
+- Lanzar excepciones personalizadas
+- Crear clase que extiende `Exception`
+- Ejemplo: `UsuarioNoEncontradoException`
+- Ejemplo: `SaldoInsuficienteException`
+- Uso de `ErrorException`
+- Manejo de warnings como excepciones
+- Conversión de errores a excepciones
+- Uso de `set_error_handler()`
+- Uso de `restore_error_handler()`
+- Uso de `set_exception_handler()`
+- Manejo global de excepciones
+- Registrar logs de errores
+- Guardar errores en archivo
+- Guardar errores en base de datos
+- Mostrar errores en desarrollo
+- Ocultar errores en producción
+- Configuración de `display_errors`
+- Configuración de `error_reporting`
+- Configuración de `log_errors`
+- Configuración de `error_log`
+- Diferencia entre `E_ALL`, `E_ERROR`, `E_WARNING`
+- Uso de `trigger_error()`
+- Niveles de error en `trigger_error()`
+- Ejemplo: lanzar warning personalizado
+- Ejemplo: lanzar notice personalizado
+- Ejemplo: lanzar error fatal personalizado
+- Captura de `Throwable` (PHP 7+)
+- Diferencia entre `Exception` y `Error`
+- Uso de `TypeError`
+- Uso de `ParseError`
+- Uso de `ArithmeticError`
+- Uso de `DivisionByZeroError`
+- Ejemplo: manejo de `TypeError`
+- Ejemplo: manejo de `DivisionByZeroError`
+- Re-lanzar excepciones (`throw $e`)
+- Encadenar excepciones (`$e->getPrevious()`)
+- Ejemplo: excepción anidada
+- Ejemplo: excepción de capa de datos
+- Ejemplo: excepción de capa de negocio
+- Ejemplo: excepción de capa de presentación
+- Excepciones en constructores
+- Excepciones en destructores
+- Excepciones en métodos mágicos
+- Excepciones en funciones anónimas
+- Excepciones en closures
+- Excepciones en promesas asíncronas
+- Excepciones en generadores
+- Buenas prácticas en excepciones
+- No usar excepciones para control normal
+- Usar excepciones solo en casos excepcionales
+- Usar tipos específicos de excepciones
+- Documentar excepciones lanzadas
+- Propagar excepciones de forma controlada
+- Manejo centralizado de excepciones
+- Librerías de logging de excepciones
+- Uso de Monolog para logging
+- Integración con Sentry
+- Integración con Bugsnag
+- Integración con New Relic
+- Errores comunes en excepciones
+- No capturar excepciones específicas
+- Usar `catch (Exception $e)` en exceso
+- No re-lanzar excepciones críticas
+- Ocultar errores en desarrollo
+- No registrar logs de errores
+- Ejemplo: API con manejo de errores
+- Ejemplo: aplicación web con manejo centralizado
+- Ejemplo: CLI con manejo de errores
+- Ejemplo: microservicio con excepciones personalizadas
+- Patrones de diseño para manejo de errores
+- Patrón Null Object
+- Patrón Result Object
+- Patrón Circuit Breaker
+- Patrón Retry
+- Resumen de manejo de errores y excepciones
+
+</details>
+
+---
+### Bloque F – Web Avanzada (Seguridad)
+
+<details>
+<summary><strong>🔹 Módulo 24 – Seguridad en PHP I (Fundamentos)</strong></summary>
+
+- Introducción a seguridad en PHP
+- Importancia de seguridad en desarrollo web
+- Tipos comunes de ataques
+- Inyección de código
+- Inyección SQL
+- XSS (Cross-Site Scripting)
+- CSRF (Cross-Site Request Forgery)
+- LFI (Local File Inclusion)
+- RFI (Remote File Inclusion)
+- Inyección de comandos del sistema
+- Validación de input del usuario
+- Sanitización de input del usuario
+- Uso de `filter_var()`
+- Uso de `htmlspecialchars()`
+- Uso de `strip_tags()`
+- Diferencia entre validación y sanitización
+- Escapado de salida (output escaping)
+- Escapado en HTML
+- Escapado en JavaScript
+- Escapado en CSS
+- Escapado en atributos HTML
+- Escapado en URLs
+- Manejo de contraseñas
+- Almacenamiento seguro con `password_hash()`
+- Verificación con `password_verify()`
+- Algoritmos soportados: BCRYPT
+- Algoritmos soportados: ARGON2
+- Configuración de coste en BCRYPT
+- Configuración de memoria en ARGON2
+- Estrategias de rotación de contraseñas
+- No almacenar contraseñas en texto plano
+- Almacenamiento seguro en base de datos
+- Uso de HTTPS obligatorio
+- Configuración de `session.cookie_secure`
+- Configuración de `session.cookie_httponly`
+- Configuración de `session.cookie_samesite`
+- Protección contra fijación de sesión
+- Regenerar IDs de sesión
+- Validar IP en sesión
+- Validar User-Agent en sesión
+- Tokens anti-CSRF
+- Generar tokens con `bin2hex(random_bytes())`
+- Guardar tokens en sesión
+- Validar tokens en POST
+- Expirar tokens CSRF
+- Ejemplo: formulario protegido contra CSRF
+- Ejemplo: API protegida contra CSRF
+- Validar uploads de archivos
+- Verificar extensión de archivo
+- Verificar tipo MIME real
+- Guardar archivos fuera de `public`
+- Generar nombres únicos
+- Evitar ejecución de archivos subidos
+- Configurar `.htaccess` en carpeta de uploads
+- Ejemplo: subida segura de imágenes
+- Ejemplo: subida segura de PDFs
+- Escapar consultas SQL
+- Usar consultas preparadas
+- Ejemplo: login seguro con MySQLi
+- Ejemplo: login seguro con PDO
+- Evitar concatenación directa de SQL
+- Validar entradas numéricas
+- Validar entradas de texto
+- Validar correos electrónicos
+- Validar URLs
+- Validar direcciones IP
+- Validar longitud de entradas
+- Evitar almacenamiento excesivo de datos
+- Prevención de XSS en formularios
+- Uso de Content Security Policy (CSP)
+- Uso de `X-XSS-Protection`
+- Uso de `X-Frame-Options`
+- Prevención de Clickjacking
+- Uso de encabezados seguros en PHP
+- Uso de `Strict-Transport-Security`
+- Uso de `Referrer-Policy`
+- Uso de `Permissions-Policy`
+- Evitar exposición de información sensible
+- Ocultar versión de PHP
+- Ocultar mensajes de error en producción
+- Buenas prácticas en configuración de PHP
+- `display_errors = Off` en producción
+- `expose_php = Off`
+- `allow_url_fopen = Off`
+- `allow_url_include = Off`
+- `disable_functions` recomendado
+- Uso de `open_basedir`
+- Uso de `max_execution_time`
+- Uso de `memory_limit`
+- Monitoreo de logs de seguridad
+- Registro de intentos de login
+- Registro de IPs sospechosas
+- Alertas en tiempo real
+- Ejemplo: sistema de detección de intrusos
+- Ejemplo: bloqueo de IPs sospechosas
+- Uso de librerías de seguridad
+- Uso de Symfony Security Component
+- Uso de PHP Security Tools
+- Errores comunes en seguridad PHP
+- Resumen de fundamentos de seguridad
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 25 – Seguridad en PHP II (Avanzada)</strong></summary>
+
+- Introducción a seguridad avanzada
+- Principio de defensa en profundidad
+- Seguridad en capas (defense in depth)
+- Validación de entrada multi-nivel
+- Sanitización multi-nivel
+- Validación estricta de tipos
+- Uso de tipado estricto `declare(strict_types=1)`
+- Seguridad en contraseñas avanzadas
+- Implementar rotación automática
+- Implementar expiración de contraseñas
+- Forzar cambio de contraseña inicial
+- Almacenamiento de contraseñas en hardware seguro (HSM)
+- Uso de 2FA (Two-Factor Authentication)
+- Autenticación con TOTP
+- Autenticación con HOTP
+- Uso de SMS para 2FA (riesgos)
+- Uso de apps como Google Authenticator
+- Uso de llaves U2F/FIDO2
+- Autenticación biométrica
+- Implementar reCAPTCHA
+- Validar comportamiento sospechoso (bot detection)
+- Sistemas anti-brute force
+- Bloqueo de cuenta tras intentos fallidos
+- Incrementar tiempo de espera tras fallos
+- Ejemplo: login con reintentos limitados
+- Ejemplo: bloqueo temporal de IP
+- Seguridad en sesiones avanzada
+- Uso de Secure Cookies siempre
+- Uso de `SameSite=Strict`
+- Invalidación automática tras inactividad
+- Cierre de sesión en todos los dispositivos
+- Detección de múltiples logins sospechosos
+- Control de concurrencia de sesión
+- Almacenamiento de sesiones cifradas
+- Uso de Redis seguro para sesiones
+- Uso de Memcached seguro para sesiones
+- Validación de tokens en API
+- Tokens JWT firmados
+- Tokens JWT encriptados
+- Rotación de tokens JWT
+- Revocación de tokens JWT
+- Seguridad en APIs REST
+- Seguridad en APIs GraphQL
+- Seguridad en WebSockets
+- Uso de OAuth2
+- Uso de OpenID Connect
+- Autorización basada en roles (RBAC)
+- Autorización basada en atributos (ABAC)
+- Autorización basada en políticas
+- Ejemplo: RBAC en aplicación PHP
+- Ejemplo: ABAC en aplicación PHP
+- Ejemplo: políticas en Symfony Security
+- Seguridad en archivos subidos
+- Escaneo antivirus en uploads
+- Integración con ClamAV
+- Validar imágenes reales con `getimagesize()`
+- Validar PDF con librerías externas
+- Guardar archivos en sistemas externos (S3)
+- Evitar ejecución de uploads en Apache
+- Evitar ejecución en Nginx
+- Ejemplo: almacenamiento en S3 seguro
+- Ejemplo: CDN para archivos públicos
+- Seguridad en base de datos avanzada
+- Encriptar datos sensibles en DB
+- Uso de columnas encriptadas
+- Uso de claves asimétricas
+- Ejemplo: encriptar números de tarjeta
+- Ejemplo: encriptar documentos sensibles
+- Seguridad en transporte de datos
+- Uso de TLS 1.2+
+- Uso de certificados válidos
+- Verificación de certificados
+- Configuración segura de cURL
+- Validar hostname en conexiones SSL
+- Seguridad en cabeceras HTTP
+- Strict CSP avanzada
+- Política de permisos estricta
+- Política de referrer estricta
+- Prevención de ataques MITM
+- Monitoreo de tráfico HTTPS
+- Seguridad en aplicaciones distribuidas
+- Tokens firmados entre microservicios
+- Validación mutua con certificados (mTLS)
+- Seguridad en colas de mensajes
+- Seguridad en RabbitMQ
+- Seguridad en Kafka
+- Seguridad en Redis
+- Seguridad en Memcached
+- Seguridad en logs
+- Evitar loggear datos sensibles
+- Uso de mascarado de datos
+- Monitoreo en tiempo real
+- Alertas en incidentes críticos
+- Ejemplo: detectar intento de SQL Injection
+- Ejemplo: detectar XSS en logs
+- Buenas prácticas en seguridad avanzada
+- Auditorías periódicas de seguridad
+- Pentesting en aplicaciones PHP
+- Cumplimiento con normativas (GDPR, PCI DSS)
+- Resumen de seguridad avanzada
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 26 – Seguridad en PHP III (Aplicaciones Web)</strong></summary>
+
+- Introducción a seguridad en aplicaciones web
+- Seguridad en formularios web
+- Validación en cliente vs servidor
+- Evitar confiar en validación del cliente
+- Tokens CSRF en formularios
+- Generar tokens únicos por sesión
+- Validar tokens al enviar formulario
+- Expirar tokens tras uso
+- Ejemplo: protección CSRF en login
+- Ejemplo: protección CSRF en registro
+- Protección contra XSS reflejado
+- Protección contra XSS almacenado
+- Escapado de salida en plantillas
+- Escapado en frameworks modernos
+- Uso de librerías de sanitización
+- HTML Purifier
+- OWASP PHP Security Project
+- Protección contra inyección de cabeceras
+- Validación de `$_SERVER['HTTP_HOST']`
+- Evitar manipulación de `HTTP_REFERER`
+- Seguridad en autenticación
+- Manejo seguro de contraseñas
+- Políticas de contraseñas seguras
+- Validación de fuerza de contraseñas
+- Uso de reglas NIST modernas
+- Evitar almacenamiento inseguro
+- Autenticación multifactor
+- Uso de correos de verificación
+- Uso de SMS (limitaciones)
+- Uso de apps de autenticación
+- Seguridad en autorización
+- RBAC avanzado
+- ABAC avanzado
+- Ejemplo: control de permisos en panel admin
+- Ejemplo: permisos por rol en API
+- Evitar escalada horizontal de privilegios
+- Evitar escalada vertical de privilegios
+- Seguridad en APIs PHP
+- Autenticación con tokens
+- Autenticación con JWT
+- Validación de firma en JWT
+- Rotación de claves en JWT
+- Revocación de JWT
+- Seguridad en sesiones de API
+- Tiempo de vida corto para tokens
+- Renovación automática con refresh tokens
+- Prevención de ataques replay
+- Ejemplo: API de pagos segura
+- Ejemplo: API de usuarios segura
+- Seguridad en subidas de archivos
+- Validar extensiones en whitelist
+- Validar MIME real
+- Almacenamiento fuera de `public`
+- Deshabilitar ejecución en carpeta de uploads
+- Ejemplo: subida segura de imágenes
+- Ejemplo: subida segura de documentos
+- Prevención de ataques de denegación de servicio (DoS)
+- Limitar tamaño de input
+- Limitar tamaño de archivos subidos
+- Limitar requests por IP
+- Implementar rate limiting
+- Ejemplo: limitar 100 requests/minuto
+- Ejemplo: bloqueo temporal tras exceso de peticiones
+- Seguridad en cabeceras HTTP
+- Uso de Content-Security-Policy
+- Uso de Strict-Transport-Security
+- Uso de X-Frame-Options
+- Uso de X-Content-Type-Options
+- Uso de Referrer-Policy
+- Evitar Clickjacking
+- Evitar MIME sniffing
+- Protección contra ataques de redirección
+- Validar URLs externas antes de redirigir
+- Bloquear open redirects
+- Seguridad en almacenamiento local
+- Cifrado de datos sensibles
+- Uso de claves simétricas seguras
+- Uso de claves asimétricas
+- Librerías de cifrado recomendadas
+- Sodium en PHP
+- OpenSSL en PHP
+- Ejemplo: cifrar y descifrar datos
+- Ejemplo: cifrar contraseñas de API
+- Ejemplo: cifrar tokens de acceso
+- Seguridad en logs
+- Evitar loggear contraseñas
+- Evitar loggear tokens
+- Evitar loggear datos sensibles
+- Enmascarar información sensible
+- Ejemplo: logs de acceso seguro
+- Ejemplo: logs de auditoría de usuarios
+- Auditorías periódicas de seguridad
+- Pentesting en aplicaciones PHP
+- Escaneo con OWASP ZAP
+- Escaneo con Burp Suite
+- Pruebas de fuzzing en formularios
+- Revisiones de código seguro
+- Capacitación en seguridad a devs
+- Uso de checklist OWASP
+- Resumen de seguridad en aplicaciones web
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 27 – Seguridad en PHP IV (Criptografía)</strong></summary>
+
+- Introducción a criptografía en PHP
+- Diferencia entre cifrado simétrico y asimétrico
+- Algoritmos simétricos soportados
+- AES-128
+- AES-256
+- ChaCha20
+- Algoritmos asimétricos soportados
+- RSA
+- ECC (Elliptic Curve Cryptography)
+- Ed25519
+- Uso de OpenSSL en PHP
+- Generar claves con OpenSSL
+- Guardar claves privadas
+- Guardar claves públicas
+- Cifrar datos con clave pública
+- Descifrar datos con clave privada
+- Firmar datos con clave privada
+- Verificar firma con clave pública
+- Ejemplo: firma digital en contratos
+- Ejemplo: firma digital en pagos
+- Uso de Sodium en PHP (libsodium)
+- Generar claves con Sodium
+- Uso de `sodium_crypto_secretbox`
+- Uso de `sodium_crypto_secretbox_open`
+- Uso de `sodium_crypto_box`
+- Uso de `sodium_crypto_box_open`
+- Firmar mensajes con `sodium_crypto_sign`
+- Verificar firma con `sodium_crypto_sign_open`
+- Ejemplo: cifrado de mensajes privados
+- Ejemplo: firma digital en correo electrónico
+- Derivación de claves
+- Uso de `password_hash()` para derivar claves
+- Uso de `sodium_crypto_pwhash`
+- Configuración de memoria y tiempo
+- Evitar claves débiles
+- Evitar claves predecibles
+- Uso de random bytes
+- Generar tokens con `random_bytes()`
+- Generar tokens con `bin2hex()`
+- Generar UUIDs en PHP
+- Uso de `random_int()`
+- Diferencia entre `mt_rand` y `random_int`
+- Ejemplo: generador de códigos de verificación
+- Ejemplo: generador de claves de sesión
+- Cifrado de archivos en PHP
+- Cifrar archivo completo con OpenSSL
+- Descifrar archivo con OpenSSL
+- Firmar archivo con OpenSSL
+- Verificar firma de archivo
+- Ejemplo: cifrado de documentos legales
+- Ejemplo: cifrado de backups
+- Hashing de datos
+- Algoritmos hash soportados
+- MD5 (obsoleto)
+- SHA1 (obsoleto)
+- SHA256
+- SHA512
+- BLAKE2
+- Ejemplo: hash de contraseñas
+- Ejemplo: hash de documentos
+- Ejemplo: hash de archivos subidos
+- Uso de HMAC
+- `hash_hmac()` en PHP
+- Ejemplo: validar integridad de mensajes
+- Ejemplo: validar integridad de archivos
+- Uso de claves compartidas en HMAC
+- Diferencia entre HMAC y hash normal
+- Criptografía híbrida
+- Cifrado simétrico + asimétrico
+- Ejemplo: cifrado híbrido de mensajes
+- Ejemplo: cifrado híbrido en APIs
+- Criptografía homomórfica (concepto)
+- Aplicaciones prácticas
+- Ejemplo: cálculo sobre datos cifrados
+- Criptografía en blockchain
+- Firmas digitales en Bitcoin
+- Firmas digitales en Ethereum
+- Ejemplo: firmar transacción blockchain
+- Almacenamiento seguro de claves
+- Uso de HSM
+- Uso de YubiKey
+- Guardar claves en archivos `.pem`
+- Evitar guardar claves en repositorios
+- Rotación de claves
+- Revocación de claves
+- Estrategias de backup seguro de claves
+- Errores comunes en criptografía PHP
+- Usar MD5 o SHA1 en producción
+- Usar `rand()` para seguridad
+- Guardar claves en texto plano
+- Guardar claves en repositorios públicos
+- Buenas prácticas en criptografía PHP
+- Usar Sodium siempre que sea posible
+- Evitar algoritmos obsoletos
+- Documentar esquemas criptográficos
+- Probar implementaciones con librerías externas
+- Ejemplo: auditoría de seguridad criptográfica
+- Ejemplo: pentesting en cifrado
+- Cumplimiento de normativas PCI DSS/GDPR
+- Resumen de criptografía en PHP
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 28 – Seguridad en PHP V (Frameworks y Librerías)</strong></summary>
+
+- Introducción a seguridad en frameworks PHP
+- Seguridad en Laravel
+- CSRF automático en Laravel
+- XSS protección en Blade
+- Sanitización automática en Laravel
+- Uso de middlewares de seguridad
+- Autenticación con Laravel Sanctum
+- Autenticación con Laravel Passport
+- Autorización con políticas en Laravel
+- Ejemplo: roles en Laravel
+- Ejemplo: permisos en Laravel
+- Seguridad en Symfony
+- Uso del Security Component
+- Uso del Validator Component
+- Uso del HttpFoundation Component
+- Autenticación con Symfony Guard
+- Autorización con Voter en Symfony
+- Ejemplo: control de acceso en Symfony
+- Seguridad en CodeIgniter
+- Protección CSRF en CodeIgniter
+- Validación de formularios en CodeIgniter
+- XSS Filter en CodeIgniter
+- Seguridad en CakePHP
+- Middleware de seguridad en CakePHP
+- Autenticación en CakePHP
+- Autorización en CakePHP
+- Seguridad en Zend Framework / Laminas
+- Laminas Authentication
+- Laminas ACL (Access Control List)
+- Laminas RBAC (Role-Based Access Control)
+- Ejemplo: permisos en Laminas
+- Seguridad en Yii2
+- Autenticación en Yii2
+- Autorización en Yii2
+- Validación en Yii2
+- Ejemplo: permisos en Yii2
+- Seguridad en Slim Framework
+- Middleware CSRF en Slim
+- Middleware JWT en Slim
+- Seguridad en APIs Slim
+- Seguridad en Lumen
+- Middleware CSRF en Lumen
+- Middleware de autenticación en Lumen
+- Ejemplo: JWT en Lumen
+- Librerías de seguridad externas
+- PHP Security Library (phpsec)
+- Defuse PHP Encryption
+- Paragon Initiative libs
+- PHP-JWT (`firebase/php-jwt`)
+- Ejemplo: uso de `firebase/php-jwt`
+- Ejemplo: uso de Defuse PHP Encryption
+- Ejemplo: uso de Paragon libs
+- Seguridad en plantillas
+- Twig y escapado automático
+- Blade y escapado automático
+- Smarty y funciones de sanitización
+- Ejemplo: sanitización en Twig
+- Ejemplo: sanitización en Blade
+- Ejemplo: sanitización en Smarty
+- Seguridad en ORM
+- Doctrine ORM y SQL Injection
+- Eloquent ORM y SQL Injection
+- Validación en ORMs
+- Ejemplo: uso seguro de Doctrine
+- Ejemplo: uso seguro de Eloquent
+- Seguridad en APIs GraphQL
+- Validación en GraphQL
+- Autenticación en GraphQL
+- Autorización en GraphQL
+- Prevención de ataques DoS en GraphQL
+- Seguridad en WebSockets
+- Autenticación en WebSockets
+- Autorización en WebSockets
+- Encriptación en WebSockets
+- Seguridad en microservicios PHP
+- Tokens en microservicios
+- Autenticación entre microservicios
+- Ejemplo: RBAC en microservicios
+- Ejemplo: JWT en microservicios
+- Seguridad en colas de mensajes
+- Validación en RabbitMQ
+- Validación en Kafka
+- Encriptación de mensajes en colas
+- Ejemplo: RabbitMQ con JWT
+- Ejemplo: Kafka con JWT
+- Auditoría en frameworks PHP
+- Logs en Laravel
+- Logs en Symfony
+- Logs en CodeIgniter
+- Logs en CakePHP
+- Logs en Slim
+- Logs en Lumen
+- Auditorías externas de seguridad
+- Pentesting en frameworks PHP
+- Herramientas recomendadas (Burp, ZAP)
+- Prácticas seguras en equipos grandes
+- Revisiones de código en frameworks
+- Capacitación en seguridad en frameworks
+- Checklist de seguridad en frameworks
+- Resumen de seguridad en frameworks y librerías
+
+</details>
+
+---
+
+### Bloque G – Frameworks PHP (Patrones y Testing)
+
+<details>
+<summary><strong>🔹 Módulo 29 – Patrones de Diseño en PHP I (Creacionales)</strong></summary>
+
+- Introducción a patrones de diseño
+- Importancia de patrones en PHP
+- Clasificación: creacionales, estructurales, de comportamiento
+- Patrón Singleton
+- Implementación de Singleton en PHP
+- Ventajas y desventajas del Singleton
+- Ejemplo: conexión a base de datos con Singleton
+- Patrón Factory Method
+- Implementación de Factory Method en PHP
+- Ventajas y desventajas de Factory Method
+- Ejemplo: creación de objetos de pago
+- Patrón Abstract Factory
+- Implementación de Abstract Factory en PHP
+- Ejemplo: creación de interfaces multiplataforma
+- Patrón Builder
+- Implementación de Builder en PHP
+- Ejemplo: construcción de objetos complejos
+- Patrón Prototype
+- Implementación de Prototype en PHP
+- Ejemplo: clonación de objetos
+- Uso de `clone` en Prototype
+- Ejemplo: duplicar configuraciones
+- Ventajas de patrones creacionales
+- Desventajas de patrones creacionales
+- Ejemplo: combinación de Factory y Singleton
+- Ejemplo: combinación de Builder y Prototype
+- Patrón Object Pool
+- Implementación de Object Pool en PHP
+- Ejemplo: pool de conexiones
+- Patrón Lazy Initialization
+- Implementación en PHP
+- Ejemplo: inicialización tardía en objetos
+- Patrón Dependency Injection
+- Implementación en PHP
+- Ejemplo: contenedor de dependencias
+- Patrón Service Locator
+- Implementación en PHP
+- Ejemplo: localizar servicios en aplicación
+- Comparación DI vs Service Locator
+- Patrón Multiton
+- Implementación de Multiton en PHP
+- Ejemplo: instancias por tipo de recurso
+- Uso de patrones creacionales en frameworks
+- Singleton en Laravel
+- Factory en Symfony
+- Builder en Doctrine
+- Prototype en Eloquent
+- Object Pool en aplicaciones concurrentes
+- Ejemplo: caché de objetos
+- Ejemplo: workers de procesos
+- Ventajas de desacoplamiento
+- Uso en microservicios
+- Uso en APIs REST
+- Buenas prácticas con patrones creacionales
+- Errores comunes: abuso de Singletons
+- Errores comunes: fábricas innecesarias
+- Errores comunes: builders excesivos
+- Documentación de patrones
+- Diagramas UML básicos
+- UML para Factory
+- UML para Abstract Factory
+- UML para Builder
+- UML para Prototype
+- UML para Singleton
+- UML para Object Pool
+- Ejemplo práctico: aplicación de e-commerce
+- Ejemplo práctico: sistema de notificaciones
+- Ejemplo práctico: motor de plantillas
+- Ejemplo práctico: API de pagos
+- Ejemplo práctico: sistema de usuarios
+- Ejemplo práctico: gestor de archivos
+- Ejemplo práctico: carrito de compras
+- Ejemplo práctico: reservas de hotel
+- Ejemplo práctico: sistema de inventario
+- Ejemplo práctico: plataforma de cursos
+- Ejemplo práctico: mensajería interna
+- Ejemplo práctico: CRM
+- Ejemplo práctico: ERP
+- Ejemplo práctico: SaaS multiusuario
+- Ejemplo práctico: gestor de contenidos
+- Ejemplo práctico: aplicación de chat
+- Ejemplo práctico: monitor de logs
+- Ejemplo práctico: servidor de colas
+- Ejemplo práctico: gestión de APIs
+- Integración con Docker y patrones creacionales
+- Integración con Kubernetes y patrones
+- Integración con CI/CD y patrones
+- Testing de patrones creacionales
+- Mocking en patrones creacionales
+- Unit testing en Singletons
+- Unit testing en Factories
+- Unit testing en Builders
+- Unit testing en Prototypes
+- Buenas prácticas de testing
+- Performance de patrones creacionales
+- Uso en alta concurrencia
+- Uso en aplicaciones distribuidas
+- Recomendaciones de uso
+- Anti-patrones comunes
+- Resumen de patrones creacionales
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 30 – Patrones de Diseño en PHP II (Estructurales)</strong></summary>
+
+- Introducción a patrones estructurales
+- Diferencia con patrones creacionales
+- Patrón Adapter
+- Implementación de Adapter en PHP
+- Ejemplo: conectar API externa
+- Patrón Bridge
+- Implementación de Bridge en PHP
+- Ejemplo: separar abstracción e implementación
+- Patrón Composite
+- Implementación de Composite en PHP
+- Ejemplo: estructura de menús
+- Patrón Decorator
+- Implementación de Decorator en PHP
+- Ejemplo: añadir funcionalidades a objetos
+- Patrón Facade
+- Implementación de Facade en PHP
+- Ejemplo: simplificar subsistemas
+- Patrón Flyweight
+- Implementación de Flyweight en PHP
+- Ejemplo: optimización de memoria
+- Patrón Proxy
+- Implementación de Proxy en PHP
+- Ejemplo: control de acceso a recursos
+- Ejemplo: proxy de caché
+- Patrón Data Mapper
+- Implementación en PHP
+- Ejemplo: mapear objetos a DB
+- Patrón Repository
+- Implementación en PHP
+- Ejemplo: repositorios en apps
+- Patrón Active Record
+- Diferencia con Repository
+- Ejemplo: Active Record en Eloquent
+- Patrón Dependency Injection Container
+- Ejemplo: contenedor en Symfony
+- Ejemplo: contenedor en Laravel
+- Patrón MVC (Model-View-Controller)
+- Ejemplo: implementación básica
+- Patrón HMVC (Hierarchical MVC)
+- Ejemplo: estructura modular
+- Patrón MVVM (Model-View-ViewModel)
+- Ejemplo: apps híbridas
+- Patrón Service Layer
+- Ejemplo: capa de servicios
+- Patrón DAO (Data Access Object)
+- Ejemplo: acceso a DB desacoplado
+- Patrón Gateway
+- Ejemplo: acceso a APIs externas
+- Patrón DTO (Data Transfer Object)
+- Ejemplo: transferencia de datos
+- Patrón Value Object
+- Ejemplo: objetos inmutables
+- Patrón Aggregate
+- Ejemplo: agregados en DDD
+- Patrón Registry
+- Ejemplo: almacenar configuraciones globales
+- Patrón Null Object
+- Ejemplo: objetos nulos seguros
+- Patrón Lazy Load
+- Ejemplo: cargar datos bajo demanda
+- Patrón Virtual Proxy
+- Ejemplo: imágenes diferidas
+- Patrón Presentation Layer
+- Ejemplo: separación de capas
+- Patrón Module
+- Ejemplo: arquitectura modular
+- Patrón Front Controller
+- Ejemplo: controlador único
+- Patrón Interceptor
+- Ejemplo: auditoría de requests
+- Patrón Observer (estructural)
+- Ejemplo: notificaciones entre objetos
+- Patrón Event Dispatcher
+- Ejemplo: sistema de eventos
+- Patrón Middleware
+- Ejemplo: pipeline de requests
+- Patrón Template View
+- Ejemplo: motor de plantillas
+- Patrón Layered Architecture
+- Ejemplo: 3 capas clásicas
+- Patrón Hexagonal Architecture
+- Ejemplo: puertos y adaptadores
+- Patrón Clean Architecture
+- Ejemplo: separación de dominios
+- Patrón Onion Architecture
+- Ejemplo: capas concéntricas
+- Anti-patrones estructurales comunes
+- God Object
+- Spaghetti Code
+- Big Ball of Mud
+- Buenas prácticas con patrones estructurales
+- Uso en microservicios
+- Uso en APIs REST
+- Uso en sistemas monolíticos
+- Testing en patrones estructurales
+- Unit testing en Adapters
+- Unit testing en Decorators
+- Unit testing en Facades
+- Unit testing en Repositories
+- Resumen de patrones estructurales
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 31 – Patrones de Diseño en PHP III (De Comportamiento I)</strong></summary>
+
+- Introducción a patrones de comportamiento
+- Diferencias con patrones estructurales
+- Patrón Strategy
+- Implementación en PHP
+- Ejemplo: estrategia de pago
+- Ejemplo: estrategia de envío
+- Patrón Observer
+- Implementación en PHP
+- Ejemplo: notificaciones de usuario
+- Ejemplo: sistema de eventos
+- Patrón Command
+- Implementación en PHP
+- Ejemplo: ejecutar tareas
+- Ejemplo: sistema de órdenes
+- Patrón State
+- Implementación en PHP
+- Ejemplo: máquina de estados
+- Ejemplo: ciclo de vida de orden
+- Patrón Chain of Responsibility
+- Implementación en PHP
+- Ejemplo: sistema de middleware
+- Ejemplo: validación de requests
+- Patrón Iterator
+- Implementación en PHP
+- Ejemplo: recorrer colección
+- Ejemplo: iterador de base de datos
+- Patrón Mediator
+- Implementación en PHP
+- Ejemplo: chat entre usuarios
+- Ejemplo: coordinación de componentes
+- Patrón Memento
+- Implementación en PHP
+- Ejemplo: deshacer cambios
+- Ejemplo: recuperación de estados
+- Patrón Visitor
+- Implementación en PHP
+- Ejemplo: operaciones en estructuras
+- Ejemplo: sistema de reportes
+- Patrón Template Method
+- Implementación en PHP
+- Ejemplo: procesos estándar
+- Ejemplo: pasos de autenticación
+- Patrón Interpreter
+- Implementación en PHP
+- Ejemplo: lenguaje simple
+- Ejemplo: consultas personalizadas
+- Patrón Null Object
+- Implementación en PHP
+- Ejemplo: objeto seguro nulo
+- Ejemplo: evitar condicionales
+- Patrón Specification
+- Implementación en PHP
+- Ejemplo: reglas de negocio
+- Ejemplo: filtrado de productos
+- Patrón Event Sourcing (concepto aplicado)
+- Ejemplo: registrar cambios como eventos
+- Patrón CQRS (Command Query Responsibility Segregation)
+- Ejemplo: separar lectura/escritura
+- Comparación de Strategy y State
+- Comparación de Observer y Mediator
+- Comparación de Command y Chain of Responsibility
+- Integración de patrones en APIs
+- Uso de Strategy en APIs de pago
+- Uso de Command en colas de trabajo
+- Uso de Observer en notificaciones
+- Uso de Mediator en chat
+- Uso de State en procesos de negocio
+- Ejemplo: aplicación de e-commerce
+- Ejemplo: gestor de proyectos
+- Ejemplo: plataforma educativa
+- Ejemplo: sistema de reservas
+- Ejemplo: sistema bancario
+- Ejemplo: aplicación de salud
+- Diagramas UML de patrones
+- UML de Strategy
+- UML de Observer
+- UML de Command
+- UML de State
+- UML de Chain of Responsibility
+- UML de Iterator
+- UML de Mediator
+- UML de Memento
+- UML de Visitor
+- UML de Template Method
+- UML de Interpreter
+- UML de Null Object
+- UML de Specification
+- Testing de patrones de comportamiento
+- Unit testing en Strategy
+- Unit testing en Observer
+- Unit testing en Command
+- Unit testing en State
+- Unit testing en Iterator
+- Buenas prácticas
+- Anti-patrones comunes
+- Evitar sobreuso de patrones
+- Documentar patrones implementados
+- Integración con frameworks modernos
+- Recomendaciones finales
+- Resumen de patrones de comportamiento I
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 32 – Patrones de Diseño en PHP IV (De Comportamiento II)</strong></summary>
+
+- Patrón Interpreter avanzado
+- Ejemplo: parser de expresiones matemáticas
+- Ejemplo: parser de consultas SQL
+- Patrón Template Method avanzado
+- Ejemplo: flujo de autenticación
+- Ejemplo: generación de reportes
+- Patrón Strategy avanzado
+- Estrategias intercambiables en tiempo de ejecución
+- Ejemplo: selección dinámica de algoritmo
+- Patrón Observer avanzado
+- Ejemplo: eventos en sistemas distribuidos
+- Ejemplo: notificaciones en tiempo real
+- Patrón Mediator avanzado
+- Ejemplo: coordinación de microservicios
+- Ejemplo: coordinación en apps modulares
+- Patrón Command avanzado
+- Implementación con colas (RabbitMQ)
+- Implementación con workers
+- Ejemplo: sistema de órdenes asíncronas
+- Patrón State avanzado
+- Ejemplo: ciclos de vida complejos
+- Ejemplo: workflow de procesos
+- Patrón Visitor avanzado
+- Ejemplo: aplicar lógica sin modificar clases
+- Ejemplo: validación de estructuras JSON
+- Patrón Chain of Responsibility avanzado
+- Ejemplo: pipelines en APIs
+- Ejemplo: validación de peticiones web
+- Patrón Iterator avanzado
+- Ejemplo: iterador sobre colecciones ORM
+- Ejemplo: iterador sobre streams
+- Patrón Specification avanzado
+- Composición de especificaciones
+- Ejemplo: filtros encadenados
+- Ejemplo: reglas dinámicas
+- Patrón Event Sourcing avanzado
+- Ejemplo: auditoría de eventos
+- Ejemplo: reconstrucción de estado
+- Patrón CQRS avanzado
+- Ejemplo: separar consultas y comandos en APIs
+- Patrón Observer en frameworks PHP
+- Laravel Events
+- Symfony Event Dispatcher
+- Slim Event Manager
+- Ejemplo: suscripción a eventos en Laravel
+- Ejemplo: suscripción a eventos en Symfony
+- Ejemplo: uso de eventos en Slim
+- Uso de Command en Laravel Queues
+- Uso de Strategy en controladores
+- Uso de State en modelos Eloquent
+- Uso de Visitor en Doctrine
+- Integración de múltiples patrones
+- Ejemplo: Observer + Mediator
+- Ejemplo: Strategy + State
+- Ejemplo: Command + Chain of Responsibility
+- Ejemplo: Template Method + Visitor
+- Buenas prácticas con patrones de comportamiento
+- Evitar sobreingeniería
+- Mantener patrones simples
+- Documentar patrones usados
+- Testing avanzado
+- Unit tests en Mediator
+- Unit tests en Visitor
+- Unit tests en CQRS
+- Unit tests en Event Sourcing
+- Anti-patrones de comportamiento
+- God Event Bus
+- Over-Observer
+- Uso excesivo de Strategy
+- Evitar duplicación con patrones
+- Casos prácticos de integración
+- Sistema de pagos
+- Sistema de reservas
+- Sistema de gestión escolar
+- Plataforma de e-commerce
+- Aplicación de mensajería
+- Aplicación bancaria
+- Aplicación de salud
+- Aplicación SaaS multiusuario
+- Arquitecturas modernas y patrones
+- Uso en microservicios
+- Uso en APIs REST
+- Uso en GraphQL
+- Uso en WebSockets
+- Patrones de comportamiento y DDD
+- Casos de aplicación en entidades
+- Casos de aplicación en agregados
+- Casos de aplicación en servicios de dominio
+- Ejemplo: e-commerce con DDD
+- Ejemplo: CRM con DDD
+- Ejemplo: ERP con DDD
+- Integración con CQRS + Event Sourcing
+- Ejemplo: eventos en microservicios
+- Ejemplo: separación de consultas y comandos
+- Performance de patrones de comportamiento
+- Uso eficiente en apps concurrentes
+- Uso eficiente en apps distribuidas
+- Herramientas de apoyo (UML, documentación)
+- Checklist de implementación
+- Resumen de patrones de comportamiento II
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 33 – Testing en PHP I (Fundamentos)</strong></summary>
+
+- Introducción al testing en PHP
+- Importancia del testing en desarrollo
+- Tipos de testing (unitario, integración, aceptación)
+- Herramientas de testing en PHP
+- PHPUnit
+- Pest PHP
+- Codeception
+- Behat
+- Instalación de PHPUnit
+- Estructura básica de un test
+- Métodos de prueba en PHPUnit
+- Asserts básicos (assertEquals, assertTrue, etc.)
+- Ejemplo: test de suma
+- Ejemplo: test de clase Usuario
+- Asserts avanzados
+- `assertInstanceOf`
+- `assertCount`
+- `assertContains`
+- `assertJson`
+- `assertStringContainsString`
+- Testing de excepciones
+- Uso de `expectException`
+- Uso de `expectExceptionMessage`
+- Testing de tipos
+- Ejemplo: validar excepciones en constructor
+- Mocking en PHPUnit
+- Uso de `createMock()`
+- Uso de `getMockBuilder()`
+- Ejemplo: mock de repositorio
+- Ejemplo: mock de servicio externo
+- Stubs en PHPUnit
+- Ejemplo: stub de clase Logger
+- Ejemplo: stub de API externa
+- Test suites en PHPUnit
+- Configuración con `phpunit.xml`
+- Organización de tests
+- Naming convention en tests
+- Estructura AAA (Arrange, Act, Assert)
+- Ejemplo: test estructurado AAA
+- Buenas prácticas de testing básico
+- Escribir tests pequeños
+- Evitar dependencia entre tests
+- Ejecutar tests frecuentemente
+- Integrar tests en CI/CD
+- Code coverage en PHPUnit
+- Uso de `--coverage-html`
+- Análisis de métricas de cobertura
+- Ejemplo: cobertura en aplicación pequeña
+- Ejemplo: cobertura en aplicación grande
+- Mocking avanzado
+- Mock de métodos estáticos
+- Mock de constructores
+- Mock de funciones globales
+- Uso de Mockery en PHP
+- Ejemplo: mocking con Mockery
+- Ejemplo: mocking con funciones globales
+- Uso de Prophecy
+- Ejemplo: test con Prophecy
+- Diferencia Mockery vs Prophecy
+- Fixtures en PHPUnit
+- Setup con `setUp()`
+- TearDown con `tearDown()`
+- Ejemplo: inicializar base de datos de prueba
+- Ejemplo: limpiar datos tras test
+- Data providers en PHPUnit
+- Ejemplo: tests parametrizados
+- Ejemplo: tests con múltiples entradas
+- Testing de controladores simples
+- Testing de servicios simples
+- Testing de repositorios simples
+- Testing de entidades simples
+- Integración con Composer
+- Instalar PHPUnit vía Composer
+- Ejecutar PHPUnit vía Composer
+- Uso de autoloading en tests
+- Directorio `/tests` en proyectos PHP
+- Ejemplo: estructura de proyecto con tests
+- Ejemplo: autoloading de clases en tests
+- Testing de funciones puras
+- Testing de funciones con efectos secundarios
+- Diferencia entre test unitario e integración
+- Ejemplo: unit test de función pura
+- Ejemplo: integration test con base de datos
+- Ejemplo: integration test con API externa
+- Testing de CLI en PHP
+- Ejemplo: test de comando Artisan en Laravel
+- Ejemplo: test de script CLI propio
+- Testing en entornos múltiples
+- Testing en PHP 8.1, 8.2, 8.3, 8.5
+- Testing en diferentes sistemas operativos
+- Testing en contenedores Docker
+- Testing en CI/CD pipelines
+- Herramientas de integración continua
+- GitHub Actions con PHPUnit
+- GitLab CI con PHPUnit
+- Jenkins con PHPUnit
+- Ejemplo: pipeline de CI/CD con tests
+- Anti-patrones en testing básico
+- No escribir tests inútiles
+- Resumen de fundamentos de testing
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 34 – Testing en PHP II (Intermedio)</strong></summary>
+
+- Testing de APIs en PHP
+- Uso de PHPUnit para APIs
+- Uso de Pest para APIs
+- Ejemplo: test de endpoint REST
+- Ejemplo: test de endpoint GraphQL
+- Testing de formularios
+- Ejemplo: test de formulario de login
+- Ejemplo: test de formulario de registro
+- Testing de sesiones
+- Ejemplo: validar creación de sesión
+- Ejemplo: validar expiración de sesión
+- Testing de cookies
+- Validar cookies httponly
+- Validar cookies secure
+- Testing de autenticación
+- Ejemplo: login válido
+- Ejemplo: login inválido
+- Ejemplo: login con bloqueo por intentos
+- Testing de autorización
+- Ejemplo: acceso permitido
+- Ejemplo: acceso denegado
+- Ejemplo: acceso por rol
+- Testing de uploads
+- Validar tipo de archivo
+- Validar tamaño de archivo
+- Ejemplo: test de subida de imagen
+- Ejemplo: test de subida de PDF
+- Testing de seguridad
+- Inyección SQL simulada
+- XSS simulado
+- CSRF simulado
+- Ejemplo: test contra SQL Injection
+- Ejemplo: test contra XSS
+- Ejemplo: test contra CSRF
+- Testing de errores y excepciones
+- Validar excepciones personalizadas
+- Ejemplo: test de `UsuarioNoEncontradoException`
+- Ejemplo: test de `SaldoInsuficienteException`
+- Testing de servicios externos
+- Mock de API externa
+- Ejemplo: test con API de pagos
+- Ejemplo: test con API de clima
+- Testing con bases de datos
+- Uso de SQLite en memoria
+- Ejemplo: test con SQLite in-memory
+- Ejemplo: test con MySQL
+- Ejemplo: test con PostgreSQL
+- Migraciones en testing
+- Seeders en testing
+- Testing de ORMs
+- Test de Eloquent en Laravel
+- Test de Doctrine en Symfony
+- Ejemplo: test de repositorios
+- Testing de controladores avanzados
+- Ejemplo: controlador con dependencias
+- Ejemplo: controlador con servicios
+- Testing de middlewares
+- Ejemplo: middleware de autenticación
+- Ejemplo: middleware de logs
+- Testing de colas de trabajo
+- Ejemplo: job de envío de correos
+- Ejemplo: job de notificaciones
+- Testing de eventos
+- Ejemplo: evento de registro de usuario
+- Ejemplo: evento de compra
+- Testing de listeners
+- Ejemplo: listener de email
+- Ejemplo: listener de SMS
+- Testing de caching
+- Validar caching de datos
+- Validar expiración de caché
+- Ejemplo: cache de resultados en Redis
+- Ejemplo: cache de sesiones en Memcached
+- Testing de logging
+- Validar logs generados
+- Validar logs de errores
+- Ejemplo: logs de auditoría
+- Ejemplo: logs de seguridad
+- Testing en frameworks
+- Laravel Dusk para testing de browser
+- Symfony Panther
+- Codeception para pruebas E2E
+- Behat para pruebas BDD
+- Ejemplo: test BDD en e-commerce
+- Ejemplo: test BDD en API
+- Testing de CLI avanzado
+- Ejemplo: test de Artisan Commands
+- Ejemplo: test de Symfony Console
+- Ejemplo: test de scripts personalizados
+- Testing en microservicios
+- Ejemplo: test de API distribuida
+- Ejemplo: test de servicio independiente
+- Integración con Docker Compose
+- Testing de aplicaciones multi-container
+- Testing en pipelines CI/CD avanzado
+- Coverage reports en CI
+- Tests paralelos en CI
+- Performance testing básico
+- Anti-patrones de testing intermedio
+- Resumen de testing intermedio
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 35 – Testing en PHP III (Avanzado)</strong></summary>
+
+- Testing avanzado en grandes proyectos
+- Estrategias de testing en equipos grandes
+- Pirámide de testing
+- Testing unitario vs integración vs e2e
+- Testing de contratos
+- Ejemplo: contrato entre microservicios
+- Ejemplo: contrato de API pública
+- Testing de mutaciones
+- Uso de Infection PHP
+- Ejemplo: detectar tests débiles
+- Testing de performance
+- Benchmarking de funciones
+- Ejemplo: test de performance en APIs
+- Ejemplo: test de performance en DB
+- Stress testing
+- Uso de JMeter con PHP
+- Uso de Locust con PHP
+- Ejemplo: stress test en login
+- Ejemplo: stress test en carrito
+- Load testing
+- Ejemplo: 1000 usuarios concurrentes
+- Ejemplo: 10,000 usuarios concurrentes
+- Testing de escalabilidad
+- Ejemplo: app en clúster
+- Ejemplo: app en Kubernetes
+- Testing de resiliencia
+- Ejemplo: caída de servicio externo
+- Ejemplo: caída de base de datos
+- Testing de tolerancia a fallos
+- Ejemplo: desconexión temporal
+- Ejemplo: recuperación automática
+- Chaos testing
+- Ejemplo: inyección de fallos
+- Ejemplo: interrupciones de red
+- Testing de seguridad avanzado
+- Pentesting automatizado
+- Escaneo con Burp Suite
+- Escaneo con OWASP ZAP
+- Ejemplo: detectar SQLi
+- Ejemplo: detectar XSS
+- Ejemplo: detectar CSRF
+- Testing de criptografía
+- Validar cifrado AES
+- Validar hashing Argon2
+- Validar integridad de JWT
+- Ejemplo: test de tokens JWT
+- Testing de autenticación avanzada
+- 2FA testing
+- OAuth2 testing
+- OpenID Connect testing
+- Testing en blockchain con PHP
+- Validar firmas digitales
+- Validar transacciones
+- Testing en APIs GraphQL
+- Ejemplo: queries complejas
+- Ejemplo: mutaciones complejas
+- Ejemplo: subscriptions
+- Testing en WebSockets
+- Ejemplo: chat en tiempo real
+- Ejemplo: notificaciones en tiempo real
+- Testing de caching avanzado
+- Validar invalidación de caché
+- Validar caché distribuido
+- Ejemplo: Redis Cluster
+- Ejemplo: Memcached Cluster
+- Testing de logging avanzado
+- Validar logs centralizados
+- Validar logs distribuidos
+- Ejemplo: ELK Stack con PHP
+- Ejemplo: Graylog con PHP
+- Testing de colas avanzado
+- Ejemplo: RabbitMQ
+- Ejemplo: Kafka
+- Ejemplo: SQS
+- Testing de microservicios avanzado
+- Contratos de API en OpenAPI
+- Validación de Swagger
+- Ejemplo: tests con Postman
+- Ejemplo: tests con Newman
+- Testing en CI/CD avanzado
+- Integración con GitHub Actions
+- Integración con GitLab CI
+- Integración con Jenkins
+- Parallel testing
+- Sharding de tests
+- Ejemplo: dividir tests por módulos
+- Ejemplo: dividir tests por features
+- Mocking avanzado
+- Mock de servicios distribuidos
+- Mock de colas
+- Mock de eventos
+- Ejemplo: simular API externa
+- Ejemplo: simular caída de DB
+- Ejemplo: simular caída de red
+- Buenas prácticas en testing avanzado
+- Documentar escenarios de prueba
+- Automatizar lo máximo posible
+- Usar métricas de calidad
+- Evitar sobretesting
+- Resumen de testing avanzado
+
+</details>
+
+---
+### Bloque H – PHP 8.5 y Futuro (DevOps)
+
+<details>
+<summary><strong>🔹 Módulo 36 – Integración Continua con PHP (CI)</strong></summary>
+
+- Introducción a CI
+- Beneficios de CI en proyectos PHP
+- Herramientas comunes: GitHub Actions
+- Herramientas comunes: GitLab CI
+- Herramientas comunes: Jenkins
+- Herramientas comunes: CircleCI
+- Configuración básica de GitHub Actions
+- Crear workflows en YAML
+- Ejemplo: pipeline básico con PHPUnit
+- Ejemplo: pipeline con PHPStan
+- Ejemplo: pipeline con PHP-CS-Fixer
+- Ejemplo: pipeline con Pest PHP
+- Configuración de GitLab CI
+- `.gitlab-ci.yml` básico
+- Jobs y stages en GitLab
+- Ejemplo: job de testing
+- Ejemplo: job de linting
+- Ejemplo: job de despliegue
+- Jenkins para PHP
+- Instalación de Jenkins
+- Configuración de jobs en Jenkins
+- Plugins recomendados en Jenkins
+- `Jenkinsfile` para proyectos PHP
+- Ejemplo: pipeline de build con Jenkins
+- CircleCI para PHP
+- Configuración con `.circleci/config.yml`
+- Ejemplo: test suite en CircleCI
+- Ejemplo: despliegue en CircleCI
+- Automatización de PHPUnit en CI
+- Automatización de Pest en CI
+- Automatización de Behat en CI
+- Automatización de Codeception en CI
+- Automatización de cobertura de código
+- Uso de `phpunit --coverage-html`
+- Uso de `phpunit --coverage-clover`
+- Integración de cobertura con Codecov
+- Integración de cobertura con Coveralls
+- Integración de SonarQube en CI
+- Análisis estático con PHPStan en CI
+- Análisis estático con Psalm en CI
+- Análisis de estilo con PHP-CS-Fixer
+- Integración de seguridad con PHP Security Checker
+- Escaneo de dependencias con Composer Audit
+- Escaneo de dependencias con Symfony CLI
+- Escaneo de vulnerabilidades con Snyk
+- Ejemplo: integración de Snyk en CI
+- Ejemplo: integración de Dependabot
+- Integración con Docker en CI
+- Construcción de contenedores PHP
+- Push a Docker Hub automático
+- Ejemplo: test en contenedor PHP
+- Ejemplo: test con base de datos en contenedor
+- Integración con Redis en CI
+- Integración con MySQL en CI
+- Integración con PostgreSQL en CI
+- Integración con MongoDB en CI
+- Testing en múltiples versiones de PHP
+- Testing en PHP 8.1
+- Testing en PHP 8.2
+- Testing en PHP 8.3
+- Testing en PHP 8.5
+- Testing en diferentes sistemas operativos
+- Linux en CI
+- Windows en CI
+- MacOS en CI
+- Estrategias de paralelización en CI
+- Sharding de tests
+- Ejecución en paralelo en GitHub Actions
+- Ejecución en paralelo en GitLab
+- Estrategias de cache en CI
+- Cache de dependencias Composer
+- Cache de dependencias npm
+- Cache de `vendor/` en PHP
+- Cache de resultados de test
+- Optimización de pipelines
+- Reducir tiempo de ejecución
+- Uso de pipelines condicionales
+- Ejemplo: ejecutar solo en `main`
+- Ejemplo: ejecutar en pull requests
+- Estrategias de branching en CI
+- Gitflow y CI
+- Trunk-based development y CI
+- Ejemplo: CI en feature branches
+- Ejemplo: CI en release branches
+- Notificaciones en CI
+- Notificaciones en Slack
+- Notificaciones en Discord
+- Notificaciones en correo
+- Dashboard de resultados de CI
+- Integración con herramientas externas
+- Integración con Jira
+- Integración con Trello
+- Integración con Asana
+- Integración con Linear
+- Errores comunes en CI
+- No cachear dependencias
+- Pipelines demasiado largos
+- Falta de cobertura de test
+- No integrar seguridad
+- Resumen de CI en PHP
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 37 – Entrega Continua y Despliegue (CD)</strong></summary>
+
+- Introducción a CD
+- Diferencia entre CI y CD
+- Beneficios de CD en PHP
+- Herramientas comunes para CD
+- GitHub Actions CD
+- GitLab CD
+- Jenkins CD
+- CircleCI CD
+- Estrategias de despliegue
+- Despliegue manual
+- Despliegue automatizado
+- Despliegue continuo
+- Rolling updates
+- Blue-Green deployment
+- Canary releases
+- Feature toggles
+- Ejemplo: Blue-Green en Laravel
+- Ejemplo: Canary en Symfony
+- Ejemplo: Rolling en Slim
+- Despliegue en servidores compartidos
+- Despliegue en VPS
+- Despliegue en contenedores
+- Despliegue en Kubernetes
+- Despliegue en plataformas PaaS
+- Heroku para PHP
+- Render para PHP
+- Railway para PHP
+- Vercel para PHP (serverless)
+- AWS Elastic Beanstalk
+- AWS Lambda con PHP
+- Google App Engine para PHP
+- Azure App Service
+- DigitalOcean App Platform
+- Configuración de entornos en CD
+- Entorno de desarrollo
+- Entorno de pruebas
+- Entorno de staging
+- Entorno de producción
+- Ejemplo: 4 entornos en Laravel
+- Ejemplo: 3 entornos en Symfony
+- Variables de entorno
+- Uso de `.env`
+- Uso de `dotenv` en PHP
+- Uso de secretos en CD
+- GitHub Secrets
+- GitLab Secrets
+- Jenkins Credentials
+- HashiCorp Vault
+- Ejemplo: secreto de API en Laravel
+- Ejemplo: secreto de API en Symfony
+- Estrategias de rollback
+- Rollback automático
+- Rollback manual
+- Monitoreo post-despliegue
+- Logs en despliegues
+- Alertas en despliegues
+- Health checks en CD
+- Ejemplo: health check en Laravel
+- Ejemplo: health check en Symfony
+- Ejemplo: health check en Slim
+- CD con Docker
+- Construcción de imágenes en pipelines
+- Push automático a Docker Hub
+- Pull automático en producción
+- Kubernetes + PHP
+- ConfigMaps y Secrets
+- Helm Charts para PHP
+- Autoescalado en Kubernetes
+- Canary releases en Kubernetes
+- Seguridad en CD
+- Validar imágenes seguras
+- Validar dependencias en producción
+- Validar acceso a entornos
+- Auditorías de despliegue
+- Logs de auditoría
+- Cumplimiento de normativas en CD
+- PCI DSS en despliegues
+- GDPR en despliegues
+- ISO 27001 en despliegues
+- Ejemplo: CD seguro en Laravel
+- Ejemplo: CD seguro en Symfony
+- Ejemplo: CD seguro en Slim
+- Ejemplo: CD seguro en Lumen
+- Herramientas de monitoreo en CD
+- Prometheus
+- Grafana
+- New Relic
+- Datadog
+- Sentry
+- Integración con APMs
+- Integración con logging centralizado
+- Integración con alertas
+- Integración con dashboards
+- Anti-patrones en CD
+- Despliegues sin testing
+- Secretos en repositorios
+- Despliegues manuales inseguros
+- No monitorear post-despliegue
+- Falta de rollback plan
+- Resumen de CD en PHP
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 38 – DevOps con PHP I (Fundamentos)</strong></summary>
+
+- Introducción a DevOps
+- Filosofía DevOps
+- Beneficios de DevOps para PHP
+- Roles en un equipo DevOps
+- Cultura DevOps
+- Principios CALMS (Culture, Automation, Lean, Measurement, Sharing)
+- Automatización en DevOps
+- Infraestructura como código (IaC)
+- Herramientas de IaC: Terraform
+- Herramientas de IaC: Ansible
+- Herramientas de IaC: Chef
+- Herramientas de IaC: Puppet
+- Ejemplo: IaC con Ansible para PHP
+- Ejemplo: IaC con Terraform para PHP
+- Monitorización en DevOps
+- Logs centralizados
+- Métricas centralizadas
+- Alertas en tiempo real
+- Integración de logging en apps PHP
+- Ejemplo: logging con Monolog
+- Ejemplo: logging con Graylog
+- Ejemplo: logging con ELK
+- Ejemplo: logging con Datadog
+- Contenedores en DevOps
+- Docker para PHP
+- Docker Compose
+- Ejemplo: `docker-compose.yml` básico
+- Ejemplo: `docker-compose.yml` con MySQL
+- Ejemplo: `docker-compose.yml` con Redis
+- Ejemplo: `docker-compose.yml` con Nginx
+- Orquestación con Kubernetes
+- Pods en Kubernetes
+- Services en Kubernetes
+- Deployments en Kubernetes
+- ConfigMaps en Kubernetes
+- Secrets en Kubernetes
+- Ejemplo: pod con PHP-FPM
+- Ejemplo: servicio PHP en Kubernetes
+- Ejemplo: despliegue con PHP en Kubernetes
+- Ejemplo: configuración de secrets en Kubernetes
+- Infraestructura en la nube
+- AWS para PHP
+- Google Cloud para PHP
+- Azure para PHP
+- DigitalOcean para PHP
+- Linode para PHP
+- Vultr para PHP
+- Ejemplo: hosting en AWS EC2
+- Ejemplo: hosting en GCP Compute Engine
+- Ejemplo: hosting en Azure VM
+- Escalabilidad en DevOps
+- Escalado horizontal
+- Escalado vertical
+- Autoescalado en Kubernetes
+- Autoescalado en AWS
+- Ejemplo: autoescalado de API PHP
+- Ejemplo: autoescalado de workers PHP
+- Seguridad en DevOps
+- DevSecOps (Security + DevOps)
+- Escaneo de imágenes en Docker
+- Escaneo de dependencias Composer
+- Escaneo de infraestructura con Terraform
+- Ejemplo: integración de Snyk en DevOps
+- Ejemplo: integración de Aqua Security
+- Ejemplo: integración de Trivy
+- Performance en DevOps
+- Stress testing automatizado
+- Load testing automatizado
+- Ejemplo: JMeter en pipelines
+- Ejemplo: Locust en pipelines
+- Costos en DevOps
+- Optimización de recursos
+- Uso eficiente de contenedores
+- Uso eficiente de bases de datos
+- Uso eficiente de caching
+- Ejemplo: optimización de costos en AWS
+- Ejemplo: optimización de costos en GCP
+- Ejemplo: optimización de costos en Azure
+- Ejemplo: optimización de costos en DO
+- Comunicación en DevOps
+- Slack para DevOps
+- Discord para DevOps
+- Teams para DevOps
+- Notificaciones en CI/CD
+- Integración de alertas con Prometheus
+- Integración de alertas con Grafana
+- Integración de alertas con Datadog
+- Ejemplo: alertas en pipeline PHP
+- Ejemplo: alertas en producción PHP
+- Anti-patrones en DevOps
+- No usar IaC
+- No monitorear
+- No escalar correctamente
+- Ignorar seguridad
+- No automatizar procesos
+- Buenas prácticas en DevOps
+- Documentar IaC
+- Revisiones de seguridad frecuentes
+- Integrar equipos de dev y ops
+- Resumen de fundamentos DevOps
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 39 – DevOps con PHP II (Avanzado)</strong></summary>
+
+- DevOps avanzado en proyectos PHP
+- CI/CD avanzado
+- Pipelines multi-stage
+- Pipelines multi-branch
+- Pipelines multi-entorno
+- Pipelines multi-repo
+- Ejemplo: pipeline multi-stage en GitHub
+- Ejemplo: pipeline multi-entorno en GitLab
+- Ejemplo: pipeline multi-branch en Jenkins
+- Ejemplo: pipeline multi-repo en CircleCI
+- Kubernetes avanzado
+- StatefulSets en Kubernetes
+- DaemonSets en Kubernetes
+- Ingress Controllers
+- Horizontal Pod Autoscaler
+- Vertical Pod Autoscaler
+- Ejemplo: autoescalado en API PHP
+- Ejemplo: balanceo de carga con Ingress
+- Ejemplo: StatefulSet para DB
+- Ejemplo: DaemonSet para logs
+- Service Mesh en DevOps
+- Istio para PHP
+- Linkerd para PHP
+- Ejemplo: Istio con PHP en Kubernetes
+- Ejemplo: Linkerd con PHP en Kubernetes
+- Monitoreo avanzado
+- Prometheus avanzado
+- Grafana avanzado
+- New Relic avanzado
+- Datadog avanzado
+- Ejemplo: monitoreo con dashboards
+- Ejemplo: alertas basadas en métricas
+- Ejemplo: monitoreo de tiempos de respuesta
+- Ejemplo: monitoreo de errores
+- Logging avanzado
+- ELK avanzado (Elastic, Logstash, Kibana)
+- Graylog avanzado
+- Fluentd con PHP
+- Ejemplo: centralización de logs
+- Ejemplo: búsqueda de logs en Kibana
+- Ejemplo: alertas en Graylog
+- Ejemplo: pipelines de logs en Fluentd
+- Seguridad avanzada en DevOps
+- Integración de escáneres de seguridad en CI/CD
+- Escaneo de infraestructura con IaC
+- Escaneo de contenedores en pipelines
+- Escaneo de dependencias en pipelines
+- Ejemplo: integración de Trivy en CI/CD
+- Ejemplo: integración de Clair en CI/CD
+- Ejemplo: integración de Anchore en CI/CD
+- Compliance en DevOps
+- PCI DSS en pipelines
+- GDPR en pipelines
+- HIPAA en pipelines
+- ISO 27001 en pipelines
+- Auditorías automáticas
+- Auditorías manuales
+- Ejemplo: auditoría en DevOps
+- Ejemplo: compliance en proyectos PHP
+- Performance avanzado
+- Escalabilidad en múltiples regiones
+- Despliegues en múltiples regiones
+- Estrategias multi-cloud
+- Ejemplo: despliegue multi-cloud con PHP
+- Ejemplo: API global distribuida
+- Disaster recovery
+- Estrategias de backup
+- Estrategias de restauración
+- Ejemplo: recuperación tras fallo de región
+- Ejemplo: recuperación tras pérdida de DB
+- Observabilidad en DevOps
+- Logs, métricas y trazas
+- OpenTelemetry en PHP
+- Ejemplo: trazas en microservicios
+- Ejemplo: métricas de rendimiento en apps
+- Ejemplo: trazas distribuidas en APIs
+- Herramientas de observabilidad avanzadas
+- Jaeger
+- Zipkin
+- Honeycomb
+- Ejemplo: Jaeger en microservicios PHP
+- Ejemplo: Zipkin en microservicios PHP
+- Ejemplo: Honeycomb en microservicios PHP
+- Anti-patrones en DevOps avanzado
+- Pipelines monolíticos
+- Falta de observabilidad
+- Falta de compliance
+- Ignorar multi-cloud
+- Falta de automatización
+- Buenas prácticas en DevOps avanzado
+- Documentación clara
+- Testing continuo de infraestructura
+- Auditorías de seguridad regulares
+- Uso de estándares abiertos
+- Cultura de mejora continua
+- Ejemplo: DevOps avanzado en SaaS
+- Ejemplo: DevOps avanzado en e-commerce
+- Ejemplo: DevOps avanzado en microservicios
+- Ejemplo: DevOps avanzado en APIs globales
+- Resumen de DevOps avanzado
+
+</details>
+
+<details>
+<summary><strong>🔹 Módulo 40 – Contenerización y Orquestación con PHP</strong></summary>
+
+- Introducción a contenerización
+- Beneficios de Docker en proyectos PHP
+- Instalación de Docker
+- Comandos básicos de Docker
+- Crear imagen Docker para PHP
+- Usar PHP-FPM en Docker
+- Usar Apache con PHP en Docker
+- Usar Nginx con PHP en Docker
+- Crear `Dockerfile` básico
+- Crear `Dockerfile` optimizado
+- Usar `.dockerignore`
+- Crear contenedor PHP interactivo
+- Mapear volúmenes en Docker
+- Mapear puertos en Docker
+- Variables de entorno en Docker
+- Configurar `php.ini` en contenedor
+- Usar Docker Compose
+- `docker-compose.yml` básico para PHP
+- `docker-compose.yml` con MySQL
+- `docker-compose.yml` con Redis
+- `docker-compose.yml` con Nginx
+- Ejemplo: stack PHP + MySQL + Nginx
+- Ejemplo: stack PHP + PostgreSQL + Redis
+- Ejemplo: stack PHP + MongoDB + Apache
+- Networking en Docker
+- Crear redes personalizadas
+- Conectar múltiples contenedores
+- Ejemplo: red para microservicios PHP
+- Ejemplo: red para APIs PHP
+- Volúmenes en Docker
+- Crear volúmenes persistentes
+- Compartir volúmenes entre contenedores
+- Ejemplo: volumen para base de datos
+- Ejemplo: volumen para logs
+- Optimización de imágenes
+- Imágenes slim
+- Multi-stage builds
+- Reducir tamaño de imágenes
+- Ejemplo: imagen optimizada de PHP
+- Ejemplo: imagen optimizada de Laravel
+- Ejemplo: imagen optimizada de Symfony
+- Testing en contenedores
+- PHPUnit en contenedor
+- Pest en contenedor
+- Behat en contenedor
+- Ejemplo: tests en GitHub Actions con Docker
+- Ejemplo: tests en GitLab con Docker
+- Ejemplo: tests en Jenkins con Docker
+- Orquestación con Docker Swarm
+- Crear cluster Swarm
+- Deploy de servicios en Swarm
+- Escalar servicios en Swarm
+- Balanceo de carga en Swarm
+- Ejemplo: app PHP en Swarm
+- Orquestación con Kubernetes
+- Pods en Kubernetes
+- Services en Kubernetes
+- Deployments en Kubernetes
+- ConfigMaps en Kubernetes
+- Secrets en Kubernetes
+- Ejemplo: app PHP en Kubernetes
+- Ejemplo: API PHP en Kubernetes
+- Ejemplo: microservicio PHP en Kubernetes
+- Balanceo de carga en Kubernetes
+- Ingress Controllers en Kubernetes
+- Autoescalado en Kubernetes
+- Escalado horizontal de pods
+- Escalado vertical de pods
+- Ejemplo: escalado en APIs PHP
+- Ejemplo: escalado en workers PHP
+- StatefulSets en Kubernetes
+- DaemonSets en Kubernetes
+- Jobs y CronJobs en Kubernetes
+- Ejemplo: cronjob en PHP
+- Ejemplo: procesamiento en batch
+- Seguridad en Docker
+- Evitar ejecutar como root
+- Usar imágenes oficiales
+- Escaneo de imágenes con Trivy
+- Escaneo de imágenes con Clair
+- Escaneo de imágenes con Anchore
+- Seguridad en Kubernetes
+- RBAC en Kubernetes
+- Namespaces en Kubernetes
+- NetworkPolicies en Kubernetes
+- PodSecurityPolicies
+- Ejemplo: RBAC en API PHP
+- Ejemplo: Namespace en microservicios
+- Ejemplo: NetworkPolicy en API
+- Observabilidad en contenedores
+- Logs en contenedores
+- Métricas en contenedores
+- Trazas en contenedores
+- Prometheus + Grafana en Kubernetes
+- Jaeger en Kubernetes
+- Zipkin en Kubernetes
+- Anti-patrones en contenerización
+- Imágenes pesadas
+- Configuración dentro de contenedor
+- Resumen de contenerización y orquestación
+
+</details>
